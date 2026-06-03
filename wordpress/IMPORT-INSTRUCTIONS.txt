@@ -1,0 +1,84 @@
+C&J SolutionsFL — Elementor Template Import Guide
+======================================================
+
+ARCHIVO
+-------
+cj-solutionsfl-home.json — Plantilla Elementor de la home completa
+
+REQUISITOS PREVIOS EN WORDPRESS
+-------------------------------
+1. WordPress 6.x instalado
+2. Plugin "Elementor" (gratis) instalado y activado
+3. Plugin "Elementor Pro" (opcional, recomendado para el widget Form de contacto)
+4. Fuentes Google "Outfit" e "Inter" — Elementor las carga automáticamente al detectarlas
+5. Subir assets a la Biblioteca de Medios de WordPress:
+   - hero-bg.png  (la foto de proyectos como fondo del hero)
+   - logo-icon.png (icono del logo)
+   - logo-full.png (logo completo)
+
+PASOS PARA IMPORTAR
+-------------------
+1. Crear una nueva página (Pages → Add New)
+2. Click en "Edit with Elementor"
+3. En el editor Elementor, click el ícono de carpeta arriba (📁 "Add Template")
+4. Pestaña "My Templates" → botón "Import Templates" arriba a la derecha
+5. Subir el archivo: cj-solutionsfl-home.json
+6. Una vez importado, click "Insert" para añadirlo a la página
+7. ANTES DE GUARDAR — abrir la sección Hero y reemplazar la URL placeholder
+   "https://YOUR-WP-SITE.com/wp-content/uploads/hero-bg.png" por la URL real
+   del archivo hero-bg.png que subiste a la biblioteca de medios
+
+PALETA DE COLORES (ya aplicada al template)
+-------------------------------------------
+Naranja brand:    #F47A1F
+Carbón:           #2D2D33
+Crema fondo:      #FAF6EA
+Crema secciones:  #F3EBD5
+Crema tarjetas:   #FFFCF2
+Texto principal:  #0A0A0C
+Inputs/bordes:    #E5D8B8
+
+TIPOGRAFÍAS
+-----------
+Headings: Outfit (300–900) — Google Fonts
+Body:     Inter (300–600) — Google Fonts
+
+SECCIONES INCLUIDAS
+-------------------
+1. Hero con foto de fondo + overlay crema + título principal + CTAs + stats
+2. Services (9 icon boxes con FontAwesome)
+3. Portfolio (3 tarjetas destacadas — duplica para añadir más)
+4. Process (4 pasos)
+5. Why Us (fondo carbón con 4 pillars)
+6. Testimonials (3 reviews con estrellas)
+7. CTA Banner (banner naranja con botones)
+8. Contact info (la sección del formulario es un placeholder — añade
+   tu propio widget Form de Elementor Pro o shortcode de WPForms/CF7)
+
+NOTAS
+-----
+- Los emojis en los botones (🛠️ 📸 📞) pueden quitarse desde el editor.
+- Los efectos angulares del bloque "Why Us" (los triángulos naranja)
+  no se exportan vía Elementor JSON. Puedes recrearlos con un widget
+  "Shape Divider" o con CSS personalizado en la pestaña Advanced de
+  la sección Why Us.
+- El marquee animado de servicios (banda con scroll horizontal) no
+  está incluido. Puedes añadirlo con un widget tipo "Marquee" de un
+  addon (Premium Addons, Element Pack, Happy Addons, etc).
+- La animación del splash inicial tampoco está — Elementor no tiene
+  equivalente nativo. Si lo necesitas, instala un plugin de preloader.
+- Custom cursor naranja: añade vía CSS personalizado en Elementor →
+  Site Settings → Custom CSS.
+
+PERSONALIZAR EL TEMA EN ELEMENTOR
+---------------------------------
+Para que toda la página use los mismos colores y tipografías:
+Elementor → Site Settings → Global Colors / Global Fonts
+Pega ahí los hex y nombres de fuentes listados arriba.
+
+NECESITAS AYUDA
+---------------
+Si quieres una versión 100% pixel-perfect del original, recomendaría
+usar un theme custom o builder como Bricks/Oxygen que soporten mejor
+los efectos pseudo-element (::before/::after). Elementor cubre el
+80–90% del diseño nativamente.
