@@ -129,6 +129,11 @@
       "contact.followLabel": "Follow Our Work",
       "contact.hoursLabel": "Hours",
       "contact.hoursValue": "Monday–Saturday, 7am–7pm",
+      "contact.ctaBadge": "FASTEST WAY TO REACH US",
+      "contact.ctaH": "Chat with us on <span class=\"accent\">WhatsApp.</span>",
+      "contact.ctaP": "Send us a message — we reply within minutes during business hours. Photos, voice notes, or just questions, all welcome.",
+      "contact.waBtn": "Message us on WhatsApp",
+      "contact.orCall": "or call directly",
 
       "form.fname": "First Name *",
       "form.lname": "Last Name *",
@@ -272,6 +277,11 @@
       "contact.followLabel": "Síguenos",
       "contact.hoursLabel": "Horario",
       "contact.hoursValue": "Lunes–Sábado, 7am–7pm",
+      "contact.ctaBadge": "LA FORMA MÁS RÁPIDA",
+      "contact.ctaH": "Háblanos por <span class=\"accent\">WhatsApp.</span>",
+      "contact.ctaP": "Escríbenos — respondemos en minutos durante horario laboral. Fotos, audios o solo preguntas, todo bienvenido.",
+      "contact.waBtn": "Escríbenos por WhatsApp",
+      "contact.orCall": "o llama directo",
 
       "form.fname": "Nombre *",
       "form.lname": "Apellido *",
