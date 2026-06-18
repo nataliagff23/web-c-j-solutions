@@ -1211,28 +1211,18 @@ section { padding: 100px 5vw; }
   #splash .splash-logo img { width: 54px !important; height: 54px !important; }
   #splash .splash-name { font-size: 1.2rem; }
 
-  /* Nav — keep firmly fixed at top on mobile */
+  /* Nav — fixed at top, transparent over dark hero, cream when scrolled */
   #nav {
     padding: 0 4vw;
     height: 84px;
     position: fixed !important;
     top: 0 !important; left: 0 !important; right: 0 !important;
     z-index: 1000 !important;
-    background: rgba(250,246,234,0.96) !important;
-    backdrop-filter: blur(16px) saturate(160%);
-    -webkit-backdrop-filter: blur(16px) saturate(160%);
-    border-bottom: 1px solid var(--line);
-    box-shadow: 0 2px 18px rgba(45,45,51,0.06);
   }
-  /* On mobile we always want the light logo since nav has solid cream bg */
-  #nav .nav-logo-img-only .logo-onlight { display: block !important; }
-  #nav .nav-logo-img-only .logo-ondark { display: none !important; }
   .nav-logo { font-size: 0.95rem; gap: 8px; }
   .nav-logo:not(.nav-logo-img-only) img { width: 32px !important; height: 32px !important; }
   .nav-logo.nav-logo-img-only img { height: 60px !important; width: auto !important; }
   .nav-mobile { inset: 84px 0 0; }
-  /* Compensate hero/page top so content doesn't hide under fixed nav */
-  body { padding-top: 0; }
 
   /* Hero */
   #hero { padding: calc(var(--nav-h) + 36px) 5vw 56px; }
