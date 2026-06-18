@@ -166,6 +166,14 @@ button { cursor: pointer; font: inherit; border: none; background: none; }
   display: block;
   object-fit: contain;
 }
+/* Dual-logo swap: white over dark hero, dark over scrolled (light) bg */
+.nav-logo-img-only .logo-onlight { display: none; }
+.nav-logo-img-only .logo-ondark { display: block; }
+#nav.scrolled .nav-logo-img-only .logo-onlight { display: block; }
+#nav.scrolled .nav-logo-img-only .logo-ondark { display: none; }
+/* Pages without a dark hero: force light logo (added in HTML) */
+body.no-dark-nav .nav-logo-img-only .logo-onlight { display: block !important; }
+body.no-dark-nav .nav-logo-img-only .logo-ondark { display: none !important; }
 @media (max-width: 600px) {
   .nav-logo-img-only img { height: 60px !important; width: auto !important; }
 }
