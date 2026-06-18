@@ -3,277 +3,746 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>C&amp;J SolutionsFL — Modelos de diseño</title>
-  <meta name="description" content="Elige entre los modelos de diseño de C&J SolutionsFL." />
-  <link rel="icon" type="image/png" href="/assets/img/logo-icon.png" />
+  <title>C&amp;J SolutionsFL | Construction &amp; Remodeling — Jacksonville, FL</title>
+  <meta name="description" content="C&J SolutionsFL — Premier construction and remodeling company in Jacksonville, Florida. LVP flooring, kitchen remodeling, exterior paint, fencing, pergolas, and more. Quality with a Florida seal." />
+  <meta name="keywords" content="construction remodeling Jacksonville FL, LVP flooring Jacksonville, kitchen remodeling Florida, exterior paint Jacksonville, fence contractor Florida, home addition Jacksonville" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="C&J SolutionsFL | Construction &amp; Remodeling" />
+  <meta property="og:description" content="Premium construction and remodeling in Jacksonville, FL. Quality with a Florida seal." />
+  <meta property="og:type" content="website" />
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&display=swap" rel="stylesheet" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html, body { height: 100%; }
-    body {
-      font-family: 'Inter', system-ui, sans-serif;
-      background: #FAF6EA;
-      color: #0A0A0C;
-      min-height: 100vh;
-      display: flex; flex-direction: column;
-      -webkit-font-smoothing: antialiased;
-    }
-    .pick-header {
-      padding: 36px 6vw 0;
-      display: flex; align-items: center; gap: 14px;
-    }
-    .pick-header img { width: 44px; height: 44px; object-fit: contain; }
-    .pick-header .brand {
-      font-family: 'Fraunces', serif;
-      font-size: 1.2rem; font-weight: 600;
-      letter-spacing: -0.01em;
-    }
-    .pick-header .brand em { font-style: italic; color: #F47A1F; font-weight: 700; }
-
-    .pick-main {
-      flex: 1;
-      display: flex; flex-direction: column;
-      justify-content: center;
-      padding: 60px 6vw 80px;
-      max-width: 1200px;
-      width: 100%;
-      margin: 0 auto;
-    }
-    .pick-label {
-      font-family: 'Outfit', sans-serif;
-      font-size: 0.78rem; font-weight: 700;
-      letter-spacing: 0.22em; text-transform: uppercase;
-      color: #F47A1F;
-      margin-bottom: 18px;
-    }
-    .pick-title {
-      font-family: 'Fraunces', serif;
-      font-size: clamp(2.4rem, 6vw, 4rem);
-      font-weight: 500;
-      font-variation-settings: "opsz" 144;
-      letter-spacing: -0.035em;
-      line-height: 1.05;
-      margin-bottom: 14px;
-      max-width: 18ch;
-    }
-    .pick-title em {
-      font-style: italic; color: #F47A1F; font-weight: 600;
-    }
-    .pick-sub {
-      font-size: 1.05rem; line-height: 1.6;
-      color: rgba(10,10,12,0.65);
-      max-width: 560px;
-      margin-bottom: 56px;
-    }
-
-    .pick-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-    }
-    @media (max-width: 980px) { .pick-grid { grid-template-columns: 1fr; } }
-    .pick-card {
-      display: block;
-      background: #FFFCF2;
-      border: 1px solid rgba(10,10,12,0.10);
-      border-radius: 14px;
-      padding: 36px 36px 30px;
-      text-decoration: none;
-      color: inherit;
-      transition: transform 0.35s cubic-bezier(0.16,1,0.3,1), box-shadow 0.35s, border-color 0.35s;
-      position: relative;
-      overflow: hidden;
-    }
-    .pick-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 24px 56px rgba(45,45,51,0.10);
-      border-color: rgba(244,122,31,0.45);
-    }
-    .pick-card.dark {
-      background: #0E0D0B;
-      color: #FAF6EA;
-      border-color: rgba(250,246,234,0.12);
-    }
-    .pick-card.dark:hover { border-color: rgba(244,122,31,0.40); }
-    .pick-preview {
-      aspect-ratio: 16/10;
-      border-radius: 8px;
-      margin-bottom: 24px;
-      position: relative;
-      overflow: hidden;
-      border: 1px solid rgba(10,10,12,0.10);
-    }
-    .pick-card.dark .pick-preview { border-color: rgba(250,246,234,0.12); }
-    /* Modelo 1 preview (cream warm editorial) */
-    .preview-1 {
-      background:
-        radial-gradient(ellipse 60% 50% at 18% 30%, rgba(244,122,31,0.22) 0%, transparent 60%),
-        linear-gradient(180deg, #FAF6EA 0%, #F3EBD5 100%);
-      display: flex; align-items: center; justify-content: center;
-      flex-direction: column;
-      padding: 28px;
-    }
-    .preview-1 .mock-title {
-      font-family: 'Fraunces', serif;
-      font-size: 1.5rem; font-weight: 500;
-      color: #0A0A0C; text-align: center;
-      line-height: 1.1; letter-spacing: -0.025em;
-    }
-    .preview-1 .mock-title em { color: #F47A1F; font-style: italic; font-weight: 600; }
-    .preview-1 .mock-stats {
-      margin-top: 14px; display: flex; gap: 1px;
-      background: rgba(10,10,12,0.10);
-    }
-    .preview-1 .mock-stats span {
-      background: #E5D8B8;
-      padding: 8px 12px;
-      font-family: 'Outfit', sans-serif;
-      font-size: 0.7rem; font-weight: 800;
-      color: #F47A1F;
-    }
-    /* Modelo 2 preview (dark editorial premium) */
-    .preview-2 {
-      background:
-        radial-gradient(ellipse 50% 60% at 80% 30%, rgba(244,122,31,0.20) 0%, transparent 70%),
-        linear-gradient(180deg, #15140F 0%, #0E0D0B 100%);
-      display: flex; align-items: center; justify-content: flex-start;
-      flex-direction: column;
-      padding: 28px;
-      text-align: left;
-    }
-    .preview-2 .mock-eye {
-      font-family: 'Outfit', sans-serif;
-      font-size: 0.6rem; font-weight: 700;
-      color: #F47A1F;
-      letter-spacing: 0.2em;
-      align-self: flex-start;
-      padding: 4px 10px;
-      border: 1px solid rgba(244,122,31,0.40);
-      border-radius: 100px;
-      margin-bottom: 12px;
-    }
-    .preview-2 .mock-title {
-      font-family: 'Fraunces', serif;
-      font-size: 1.5rem; font-weight: 500;
-      color: #FAF6EA;
-      line-height: 1.05; letter-spacing: -0.03em;
-      align-self: flex-start;
-    }
-    .preview-2 .mock-title em { color: #F47A1F; font-style: italic; }
-    .preview-2 .mock-divider {
-      margin-top: auto;
-      height: 1px;
-      width: 100%;
-      background: rgba(250,246,234,0.10);
-    }
-    .preview-2 .mock-meta {
-      align-self: flex-start;
-      font-family: 'Outfit', sans-serif;
-      font-size: 0.62rem;
-      color: rgba(250,246,234,0.50);
-      letter-spacing: 0.18em;
-      margin-top: 10px;
-    }
-
-    .pick-name {
-      font-family: 'Outfit', sans-serif;
-      font-size: 0.74rem; font-weight: 700;
-      letter-spacing: 0.18em; text-transform: uppercase;
-      color: #F47A1F;
-      margin-bottom: 10px;
-    }
-    .pick-heading {
-      font-family: 'Fraunces', serif;
-      font-size: 1.6rem; font-weight: 500;
-      letter-spacing: -0.022em;
-      margin-bottom: 8px;
-    }
-    .pick-heading em { font-style: italic; color: #F47A1F; font-weight: 600; }
-    .pick-desc {
-      font-size: 0.95rem;
-      color: rgba(10,10,12,0.62);
-      line-height: 1.5;
-      margin-bottom: 16px;
-    }
-    .pick-card.dark .pick-desc { color: rgba(250,246,234,0.62); }
-    .pick-arrow {
-      font-family: 'Outfit', sans-serif;
-      font-size: 0.78rem; font-weight: 700;
-      letter-spacing: 0.16em; text-transform: uppercase;
-      color: #F47A1F;
-      display: inline-flex; align-items: center; gap: 8px;
-      transition: gap 0.25s;
-    }
-    .pick-card:hover .pick-arrow { gap: 14px; }
-
-    .pick-footer {
-      padding: 24px 6vw 32px;
-      font-family: 'Outfit', sans-serif;
-      font-size: 0.76rem;
-      color: rgba(10,10,12,0.45);
-      letter-spacing: 0.06em;
-      text-align: center;
-    }
-
-    @media (max-width: 720px) {
-      .pick-grid { grid-template-columns: 1fr; }
-      .pick-card { padding: 28px 24px 24px; }
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="/assets/img/logo-icon.png" />
+  <link rel="stylesheet" href="css/styles.css?v=m1.1-mobilelogo" />
 </head>
 <body>
-  <header class="pick-header">
-    <img src="/assets/img/logo-icon.png" alt="C&J Solutions" />
-    <div class="brand">C&amp;J <em>SolutionsFL</em></div>
-  </header>
 
-  <main class="pick-main">
-    <p class="pick-label">Design Models</p>
-    <h1 class="pick-title">Elige el modelo de <em>diseño</em>.</h1>
-    <p class="pick-sub">Dos direcciones creativas para la misma marca y contenido. Haz clic para previsualizar.</p>
+<!-- GRAIN -->
+<div class="grain" aria-hidden="true"></div>
 
-    <div class="pick-grid">
-      <a class="pick-card" href="/modelo-1/">
-        <div class="pick-preview preview-1">
-          <div class="mock-title">We Build Your<br><em>Dream Home.</em></div>
-          <div class="mock-stats"><span>5+</span><span>300+</span><span>100%</span><span>5★</span></div>
-        </div>
-        <div class="pick-name">Modelo 1</div>
-        <h2 class="pick-heading">Warm <em>Editorial</em></h2>
-        <p class="pick-desc">Paleta crema cálida, acentos serif italic, tarjetas suaves con detalles angulares naranjas.</p>
-        <span class="pick-arrow">Ver modelo →</span>
+<!-- CUSTOM CURSOR -->
+<div class="cursor" aria-hidden="true">
+  <div class="cursor-dot"></div>
+</div>
+<div class="cursor" aria-hidden="true">
+  <div class="cursor-ring"></div>
+</div>
+
+<!-- WHATSAPP FLOAT -->
+<a class="wa-float" href="https://wa.me/19183781896" target="_blank" rel="noopener" aria-label="WhatsApp C&amp;J SolutionsFL">
+  💬
+</a>
+
+<!-- ══════════════════════════════════════════════
+     NAVIGATION
+════════════════════════════════════════════════ -->
+<nav id="nav" role="navigation" aria-label="Main navigation">
+  <a class="nav-logo nav-logo-img-only" href="#hero" aria-label="C&J SolutionsFL Home">
+    <img src="/assets/img/logo-horiz.png" alt="C&J SolutionsFL — Construction and Remodeling" />
+  </a>
+
+  <ul class="nav-links" role="list">
+    <li><a href="#services" data-i18n="nav.services">Services</a></li>
+    <li><a href="#showcase" data-i18n="nav.work">Our Work</a></li>
+    <li><a href="#whyus" data-i18n="nav.about">About</a></li>
+    <li><a href="#testimonials" data-i18n="nav.reviews">Reviews</a></li>
+    <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+  </ul>
+
+  <div class="lang-switch" role="group" aria-label="Language switcher">
+    <button type="button" data-lang="en" class="active">EN</button>
+    <span class="sep">/</span>
+    <button type="button" data-lang="es">ES</button>
+  </div>
+
+  <a class="btn-nav" href="#contact" data-i18n="nav.cta">Free Quote</a>
+
+  <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile menu -->
+<nav class="nav-mobile" aria-label="Mobile navigation">
+  <a href="#services" data-i18n="nav.services">Services</a>
+  <a href="#showcase" data-i18n="nav.work">Our Work</a>
+  <a href="#whyus" data-i18n="nav.aboutLong">About Us</a>
+  <a href="#testimonials" data-i18n="nav.reviews">Reviews</a>
+  <a href="#contact" data-i18n="nav.contact">Contact</a>
+  <div class="lang-switch lang-switch-mobile" role="group" aria-label="Language switcher">
+    <button type="button" data-lang="en" class="active">EN</button>
+    <span class="sep">/</span>
+    <button type="button" data-lang="es">ES</button>
+  </div>
+  <a class="btn-mobile" href="#contact" data-i18n="nav.ctaLong">Get a Free Quote →</a>
+</nav>
+
+<!-- ══════════════════════════════════════════════
+     HERO
+════════════════════════════════════════════════ -->
+<section id="hero" role="banner">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="hero-mesh"></div>
+    <div class="hero-grid-lines"></div>
+  </div>
+
+  <div class="hero-inner">
+    <div class="hero-kicker reveal" data-i18n="hero.kicker">
+      📍 Jacksonville, Florida
+    </div>
+
+    <h1 class="hero-title reveal" data-delay="1" data-i18n="hero.title">
+      We Build Your
+      <span class="accent"> Dream Home.</span>
+      <span class="line2">We Build to Last.</span>
+    </h1>
+
+    <p class="hero-sub reveal" data-delay="2" data-i18n="hero.sub">
+      Construction &amp; remodeling experts in Jacksonville, FL. From flooring and kitchen makeovers to fences, decks, pergolas, and full home additions — <strong>luxury in every detail.</strong>
+    </p>
+
+    <div class="hero-actions reveal" data-delay="3">
+      <a class="btn-primary" href="#contact" data-i18n="hero.btnPrimary">
+        🛠️ Get a Free Quote
       </a>
-
-      <a class="pick-card" href="/modelo-1.1/">
-        <div class="pick-preview preview-1">
-          <div class="mock-title">We Build Your<br><em>Dream Home.</em></div>
-          <div class="mock-stats"><span>5+</span><span>300+</span><span>100%</span><span>5★</span></div>
-        </div>
-        <div class="pick-name">Modelo 1.1</div>
-        <h2 class="pick-heading">Warm <em>Editorial</em></h2>
-        <p class="pick-desc">Copia del Modelo 1 — lista para iterar variantes (colores, layouts, copy) sin tocar el original.</p>
-        <span class="pick-arrow">Ver modelo →</span>
-      </a>
-
-      <a class="pick-card dark" href="/modelo-2/">
-        <div class="pick-preview preview-2">
-          <div class="mock-eye">● JACKSONVILLE · FL</div>
-          <div class="mock-title">We Build Your<br><em>Dream Home.</em></div>
-          <div class="mock-divider"></div>
-          <div class="mock-meta">5+ YEARS · 300+ PROJECTS · 5★ RATED</div>
-        </div>
-        <div class="pick-name">Modelo 2</div>
-        <h2 class="pick-heading">Dark <em>Premium</em></h2>
-        <p class="pick-desc">Fondo oscuro premium, tipografía serif Fraunces dramática, layout estilo revista. Lujo y autoridad.</p>
-        <span class="pick-arrow">Ver modelo →</span>
+      <a class="btn-ghost" href="#showcase" data-i18n="hero.btnGhost">
+        📸 See Our Work
       </a>
     </div>
-  </main>
 
-  <footer class="pick-footer">
-    © 2026 C&amp;J SolutionsFL · Jacksonville, FL
-  </footer>
+    <div class="hero-stats reveal" data-delay="4" aria-label="Company statistics">
+      <div class="hero-stat">
+        <span class="num" data-count="5" data-suffix="+">5+</span>
+        <span class="label" data-i18n="hero.stat1">Years Experience</span>
+      </div>
+      <div class="hero-stat">
+        <span class="num" data-count="300" data-suffix="+">300+</span>
+        <span class="label" data-i18n="hero.stat2">Projects Completed</span>
+      </div>
+      <div class="hero-stat">
+        <span class="num" data-count="100" data-suffix="%">100%</span>
+        <span class="label" data-i18n="hero.stat3">Satisfaction</span>
+      </div>
+      <div class="hero-stat">
+        <span class="num" data-count="5" data-suffix="★">5★</span>
+        <span class="label" data-i18n="hero.stat4">Rated</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-down" aria-hidden="true">
+    <span data-i18n="hero.scroll">Scroll</span>
+    <div class="arrow">↓</div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     MARQUEE
+════════════════════════════════════════════════ -->
+<div class="marquee-section" aria-hidden="true">
+  <div class="marquee-track">
+    <!-- Set 1 -->
+    <span class="marquee-item"><span class="dot"></span><span data-i18n="srv.kitchen">Kitchen Remodeling</span></span>
+    <span class="marquee-item"><span class="dot"></span><span data-i18n="srv.bathroom">Bathroom Remodeling</span></span>
+    <span class="marquee-item"><span class="dot"></span><span data-i18n="srv.flooring">Flooring</span></span>
+    <span class="marquee-item"><span class="dot"></span><span data-i18n="srv.painting">Painting</span></span>
+    <span class="marquee-item"><span class="dot"></span><span data-i18n="srv.drywall">Drywall</span></span>
+    <span class="marquee-item"><span class="dot"></span><span data-i18n="srv.carpentry">Carpentry</span></span>
+    <span class="marquee-item"><span class="dot"></span><span data-i18n="srv.deck">Deck &amp; Pergola</span></span>
+    <span class="marquee-item"><span class="dot"></span><span data-i18n="srv.fences">Fences</span></span>
+    <span class="marquee-item"><span class="dot"></span><span data-i18n="srv.pavers">Pavers</span></span>
+    <span class="marquee-item"><span class="dot"></span><span data-i18n="srv.handyman">Handyman Services</span></span>
+    <span class="marquee-item"><span class="dot"></span><span data-i18n="srv.others">Others</span></span>
+    <!-- Set 2 (duplicate for seamless loop) -->
+    <span class="marquee-item"><span class="dot"></span><span data-i18n="srv.kitchen">Kitchen Remodeling</span></span>
+    <span class="marquee-item"><span class="dot"></span><span data-i18n="srv.bathroom">Bathroom Remodeling</span></span>
+    <span class="marquee-item"><span class="dot"></span><span data-i18n="srv.flooring">Flooring</span></span>
+    <span class="marquee-item"><span class="dot"></span><span data-i18n="srv.painting">Painting</span></span>
+    <span class="marquee-item"><span class="dot"></span><span data-i18n="srv.drywall">Drywall</span></span>
+    <span class="marquee-item"><span class="dot"></span><span data-i18n="srv.carpentry">Carpentry</span></span>
+    <span class="marquee-item"><span class="dot"></span><span data-i18n="srv.deck">Deck &amp; Pergola</span></span>
+    <span class="marquee-item"><span class="dot"></span><span data-i18n="srv.fences">Fences</span></span>
+    <span class="marquee-item"><span class="dot"></span><span data-i18n="srv.pavers">Pavers</span></span>
+    <span class="marquee-item"><span class="dot"></span><span data-i18n="srv.handyman">Handyman Services</span></span>
+    <span class="marquee-item"><span class="dot"></span><span data-i18n="srv.others">Others</span></span>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     SERVICES
+════════════════════════════════════════════════ -->
+<section id="services">
+  <div class="container">
+    <div class="services-header">
+      <div>
+        <p class="section-label reveal" data-i18n="services.label">What We Do</p>
+        <h2 class="section-title reveal" data-delay="1" data-i18n="services.title">
+          Full-Scope <span class="accent">Remodeling</span><br>
+          &amp; Construction
+        </h2>
+      </div>
+      <p class="section-sub reveal" data-delay="2" data-i18n="services.sub">
+        From flooring and painting to full home additions — we handle it all. Licensed, insured, and based in Jacksonville, FL.
+      </p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card reveal" data-delay="1">
+        <span class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="7" y="12" width="34" height="28" rx="2"/>
+            <line x1="7" y1="21" x2="41" y2="21"/>
+            <circle cx="15" cy="16.5" r="1.2" fill="currentColor"/>
+            <circle cx="24" cy="16.5" r="1.2" fill="currentColor"/>
+            <circle cx="33" cy="16.5" r="1.2" fill="currentColor"/>
+            <rect x="13" y="26" width="22" height="10" rx="1"/>
+            <line x1="20" y1="29" x2="20" y2="33"/>
+            <line x1="28" y1="29" x2="28" y2="33"/>
+          </svg>
+        </span>
+        <h3 class="service-name" data-i18n="srv.kitchen">Kitchen Remodeling</h3>
+        <p class="service-desc" data-i18n="srv.kitchen.desc">Complete kitchen transformations — cabinetry, countertops, backsplash, and layout redesigns.</p>
+        <span class="service-arrow" aria-hidden="true">↗</span>
+      </div>
+
+      <div class="service-card reveal" data-delay="2">
+        <span class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 22 H43 V31 Q43 36 38 36 H10 Q5 36 5 31 Z"/>
+            <line x1="10" y1="22" x2="10" y2="14"/>
+            <circle cx="10" cy="11.5" r="2.5"/>
+            <line x1="13" y1="38" x2="13" y2="42"/>
+            <line x1="35" y1="38" x2="35" y2="42"/>
+          </svg>
+        </span>
+        <h3 class="service-name" data-i18n="srv.bathroom">Bathroom Remodeling</h3>
+        <p class="service-desc" data-i18n="srv.bathroom.desc">Full bath renovations — tile, vanities, showers, and flooring. Your personal spa awaits.</p>
+        <span class="service-arrow" aria-hidden="true">↗</span>
+      </div>
+
+      <div class="service-card reveal" data-delay="3">
+        <span class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="5" y="9" width="38" height="9" rx="1.5"/>
+            <rect x="5" y="19.5" width="38" height="9" rx="1.5"/>
+            <rect x="5" y="30" width="38" height="9" rx="1.5"/>
+            <line x1="20" y1="9" x2="20" y2="18"/>
+            <line x1="30" y1="19.5" x2="30" y2="28.5"/>
+            <line x1="16" y1="30" x2="16" y2="39"/>
+          </svg>
+        </span>
+        <h3 class="service-name" data-i18n="srv.flooring">Flooring</h3>
+        <p class="service-desc" data-i18n="srv.flooring.desc">All types of flooring — LVP, hardwood, tile, laminate, and more. Durable, beautiful, and built for Florida.</p>
+        <span class="service-arrow" aria-hidden="true">↗</span>
+      </div>
+
+      <div class="service-card reveal" data-delay="1">
+        <span class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="5" y="9" width="32" height="11" rx="2"/>
+            <line x1="37" y1="14.5" x2="42" y2="14.5"/>
+            <path d="M21 20 V25 H17 V40 H29 V25 H25 V20"/>
+            <line x1="20" y1="32" x2="26" y2="32"/>
+          </svg>
+        </span>
+        <h3 class="service-name" data-i18n="srv.painting">Painting</h3>
+        <p class="service-desc" data-i18n="srv.painting.desc">Interior and exterior painting — clean lines, premium finishes, and lasting protection for every surface.</p>
+        <span class="service-arrow" aria-hidden="true">↗</span>
+      </div>
+
+      <div class="service-card reveal" data-delay="2">
+        <span class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="5" y="9" width="38" height="30" rx="1"/>
+            <line x1="5" y1="19" x2="43" y2="19"/>
+            <line x1="5" y1="29" x2="43" y2="29"/>
+            <line x1="17" y1="9" x2="17" y2="19"/>
+            <line x1="31" y1="9" x2="31" y2="19"/>
+            <line x1="12" y1="19" x2="12" y2="29"/>
+            <line x1="24" y1="19" x2="24" y2="29"/>
+            <line x1="36" y1="19" x2="36" y2="29"/>
+            <line x1="17" y1="29" x2="17" y2="39"/>
+            <line x1="31" y1="29" x2="31" y2="39"/>
+          </svg>
+        </span>
+        <h3 class="service-name" data-i18n="srv.drywall">Drywall</h3>
+        <p class="service-desc" data-i18n="srv.drywall.desc">Installation, repair, and finishing — seamless walls and ceilings with impeccable results.</p>
+        <span class="service-arrow" aria-hidden="true">↗</span>
+      </div>
+
+      <div class="service-card reveal" data-delay="3">
+        <span class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M10 6 L18 14 L12 20 L4 12 Z"/>
+            <line x1="14" y1="18" x2="40" y2="44"/>
+            <line x1="18" y1="14" x2="44" y2="40"/>
+          </svg>
+        </span>
+        <h3 class="service-name" data-i18n="srv.carpentry">Carpentry</h3>
+        <p class="service-desc" data-i18n="srv.carpentry.desc">Custom carpentry — trim, molding, built-ins, framing, doors, and detailed woodwork done right.</p>
+        <span class="service-arrow" aria-hidden="true">↗</span>
+      </div>
+
+      <div class="service-card reveal" data-delay="1">
+        <span class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 14 H44 V20 H4 Z"/>
+            <line x1="10" y1="20" x2="10" y2="40"/>
+            <line x1="20" y1="20" x2="20" y2="40"/>
+            <line x1="28" y1="20" x2="28" y2="40"/>
+            <line x1="38" y1="20" x2="38" y2="40"/>
+            <line x1="8" y1="14" x2="8" y2="9"/>
+            <line x1="40" y1="14" x2="40" y2="9"/>
+          </svg>
+        </span>
+        <h3 class="service-name" data-i18n="srv.deck">Deck &amp; Pergola</h3>
+        <p class="service-desc" data-i18n="srv.deck.desc">Custom wood decks and pergolas — outdoor living spaces designed to extend your home elegantly.</p>
+        <span class="service-arrow" aria-hidden="true">↗</span>
+      </div>
+
+      <div class="service-card reveal" data-delay="2">
+        <span class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M10 13 L13 9 L16 13 V40 H10 Z"/>
+            <path d="M21 13 L24 9 L27 13 V40 H21 Z"/>
+            <path d="M32 13 L35 9 L38 13 V40 H32 Z"/>
+            <line x1="7" y1="20" x2="41" y2="20"/>
+            <line x1="7" y1="30" x2="41" y2="30"/>
+          </svg>
+        </span>
+        <h3 class="service-name" data-i18n="srv.fences">Fences</h3>
+        <p class="service-desc" data-i18n="srv.fences.desc">Wood, vinyl, and aluminum fencing — privacy, security, and style for residential and commercial.</p>
+        <span class="service-arrow" aria-hidden="true">↗</span>
+      </div>
+
+      <div class="service-card reveal" data-delay="3">
+        <span class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="5" y="9" width="16" height="12" rx="0.5"/>
+            <rect x="23" y="9" width="20" height="12" rx="0.5"/>
+            <rect x="5" y="23" width="20" height="12" rx="0.5"/>
+            <rect x="27" y="23" width="16" height="12" rx="0.5"/>
+            <rect x="11" y="37" width="20" height="6" rx="0.5"/>
+            <rect x="33" y="37" width="10" height="6" rx="0.5"/>
+          </svg>
+        </span>
+        <h3 class="service-name" data-i18n="srv.pavers">Pavers</h3>
+        <p class="service-desc" data-i18n="srv.pavers.desc">Driveways, walkways, patios — premium paver installation that adds curb appeal and value.</p>
+        <span class="service-arrow" aria-hidden="true">↗</span>
+      </div>
+
+      <div class="service-card reveal" data-delay="1">
+        <span class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="5" y="18" width="38" height="22" rx="2"/>
+            <path d="M16 18 V12 Q16 8 20 8 H28 Q32 8 32 12 V18"/>
+            <line x1="5" y1="27" x2="43" y2="27"/>
+            <circle cx="24" cy="27" r="2" fill="currentColor"/>
+          </svg>
+        </span>
+        <h3 class="service-name" data-i18n="srv.handyman">Handyman Services</h3>
+        <p class="service-desc" data-i18n="srv.handyman.desc">From small repairs to honey-do lists — reliable handyman work for everything your home needs.</p>
+        <span class="service-arrow" aria-hidden="true">↗</span>
+      </div>
+
+      <div class="service-card reveal" data-delay="2">
+        <span class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="24" r="3" fill="currentColor"/>
+            <circle cx="24" cy="24" r="3" fill="currentColor"/>
+            <circle cx="36" cy="24" r="3" fill="currentColor"/>
+          </svg>
+        </span>
+        <h3 class="service-name" data-i18n="srv.others">Others</h3>
+        <p class="service-desc" data-i18n="srv.others.desc">Don't see your project listed? Just ask — we take on custom and specialty work too.</p>
+        <span class="service-arrow" aria-hidden="true">↗</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     SHOWCASE
+════════════════════════════════════════════════ -->
+<section id="showcase">
+  <div class="container">
+    <div class="showcase-header">
+      <p class="section-label reveal" data-i18n="portfolio.label">Portfolio</p>
+      <h2 class="section-title reveal" data-delay="1" data-i18n="portfolio.title">
+        Featured <span class="accent">Projects.</span>
+      </h2>
+      <p class="section-sub reveal" data-delay="2" data-i18n="portfolio.sub">A curated selection of our recent construction and remodeling work across Jacksonville and Central Florida.</p>
+    </div>
+  </div>
+
+  <!-- Scrollable showcase — add your own photos by replacing the placeholder divs with <img> tags -->
+  <div class="showcase-scroll" role="list" aria-label="Project portfolio">
+
+    <div class="showcase-card has-photo" role="listitem">
+      <div class="ba-wrap" style="background-image: url('/assets/img/projects/8.jpg');"></div>
+    </div>
+
+    <div class="showcase-card has-photo" role="listitem">
+      <div class="ba-wrap" style="background-image: url('/assets/img/projects/2.jpg');"></div>
+    </div>
+
+    <div class="showcase-card has-photo" role="listitem">
+      <div class="ba-wrap" style="background-image: url('/assets/img/projects/5.jpg');"></div>
+    </div>
+
+    <div class="showcase-card has-photo" role="listitem">
+      <div class="ba-wrap" style="background-image: url('/assets/img/projects/7.jpg');"></div>
+    </div>
+
+    <div class="showcase-card has-photo" role="listitem">
+      <div class="ba-wrap" style="background-image: url('/assets/img/projects/10.jpg');"></div>
+    </div>
+
+    <div class="showcase-card has-photo" role="listitem">
+      <div class="ba-wrap" style="background-image: url('/assets/img/projects/3.jpg');"></div>
+    </div>
+
+  </div>
+
+  <div class="showcase-cta-wrap">
+    <a class="btn-view-more" href="gallery.html" data-i18n="portfolio.viewMore">View Full Gallery →</a>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     PROCESS
+════════════════════════════════════════════════ -->
+<section id="process">
+  <div class="container">
+    <p class="section-label reveal" data-i18n="process.label">How It Works</p>
+    <h2 class="section-title reveal" data-delay="1" data-i18n="process.title">
+      Simple Process. <span class="accent">Exceptional Results.</span>
+    </h2>
+
+    <div class="process-steps">
+      <div class="process-step reveal" data-delay="1">
+        <div class="step-num" data-i18n="process.s1.num">STEP 01</div>
+        <div class="step-icon" aria-hidden="true">📞</div>
+        <h3 class="step-title" data-i18n="process.s1.title">Free Consultation</h3>
+        <p class="step-desc" data-i18n="process.s1.desc">Call or message us. We discuss your vision, needs, and budget — no pressure, no obligation.</p>
+      </div>
+
+      <div class="process-step reveal" data-delay="2">
+        <div class="step-num" data-i18n="process.s2.num">STEP 02</div>
+        <div class="step-icon" aria-hidden="true">📋</div>
+        <h3 class="step-title" data-i18n="process.s2.title">Detailed Quote</h3>
+        <p class="step-desc" data-i18n="process.s2.desc">We visit your property, take measurements, and deliver a transparent itemized quote.</p>
+      </div>
+
+      <div class="process-step reveal" data-delay="3">
+        <div class="step-num" data-i18n="process.s3.num">STEP 03</div>
+        <div class="step-icon" aria-hidden="true">🛠️</div>
+        <h3 class="step-title" data-i18n="process.s3.title">We Get to Work</h3>
+        <p class="step-desc" data-i18n="process.s3.desc">Our skilled crew starts on schedule. You get daily updates and zero surprises.</p>
+      </div>
+
+      <div class="process-step reveal" data-delay="4">
+        <div class="step-num" data-i18n="process.s4.num">STEP 04</div>
+        <div class="step-icon" aria-hidden="true">🏆</div>
+        <h3 class="step-title" data-i18n="process.s4.title">Final Walkthrough</h3>
+        <p class="step-desc" data-i18n="process.s4.desc">We walk you through every detail. 100% satisfied? Then the job is done right.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     WHY US
+════════════════════════════════════════════════ -->
+<section id="whyus">
+  <div class="container">
+    <div class="whyus-wrap">
+
+      <div class="whyus-visual reveal">
+        <img src="/assets/img/whyus-van.png" alt="C&J SolutionsFL branded company van" class="whyus-photo" />
+        <div class="whyus-visual-badge" data-i18n="whyus.badge">🏅 Quality with a Florida Seal</div>
+      </div>
+
+      <div>
+        <p class="section-label reveal" data-i18n="whyus.label">Why C&amp;J SolutionsFL</p>
+        <h2 class="section-title reveal" data-delay="1" data-i18n="whyus.title">
+          We Don't Just Build.<br>
+          <span class="accent">We Transform.</span>
+        </h2>
+        <p class="section-sub reveal" data-delay="2" data-i18n="whyus.sub">
+          Based in Jacksonville, FL — we've been crafting quality construction and remodeling projects for homeowners across the region. Solid construction, impeccable finishes, and a team that treats your home like their own.
+        </p>
+
+        <div class="pillars">
+          <div class="pillar reveal" data-delay="1">
+            <span class="pillar-num">01</span>
+            <div class="pillar-content">
+              <h3 class="pillar-title" data-i18n="whyus.p1.title">Licensed &amp; Insured</h3>
+              <p class="pillar-text" data-i18n="whyus.p1.text">Full licensing and insurance coverage gives you complete peace of mind throughout every project.</p>
+            </div>
+          </div>
+          <div class="pillar reveal" data-delay="2">
+            <span class="pillar-num">02</span>
+            <div class="pillar-content">
+              <h3 class="pillar-title" data-i18n="whyus.p2.title">Transparent Pricing</h3>
+              <p class="pillar-text" data-i18n="whyus.p2.text">No hidden fees, no surprises. You get a detailed quote before any work begins — and we stick to it.</p>
+            </div>
+          </div>
+          <div class="pillar reveal" data-delay="3">
+            <span class="pillar-num">03</span>
+            <div class="pillar-content">
+              <h3 class="pillar-title" data-i18n="whyus.p3.title">On-Time Delivery</h3>
+              <p class="pillar-text" data-i18n="whyus.p3.text">We respect your time. Timelines are commitments, not suggestions. We finish when we say we will.</p>
+            </div>
+          </div>
+          <div class="pillar reveal" data-delay="4">
+            <span class="pillar-num">04</span>
+            <div class="pillar-content">
+              <h3 class="pillar-title" data-i18n="whyus.p4.title">Bilingual Team</h3>
+              <p class="pillar-text" data-i18n="whyus.p4.text">We serve Jacksonville's English and Spanish-speaking communities. Communication is always clear.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     TESTIMONIALS
+════════════════════════════════════════════════ -->
+<section id="testimonials">
+  <div class="container">
+    <p class="section-label reveal" data-i18n="reviews.label">Reviews</p>
+    <h2 class="section-title reveal" data-delay="1" data-i18n="reviews.title">
+      What Our Clients <span class="accent">Say.</span>
+    </h2>
+
+    <div class="testimonials-grid">
+
+      <div class="testimonial-card reveal" data-delay="1">
+        <div class="t-quote-icon" aria-hidden="true">"</div>
+        <div class="t-stars" aria-label="5 stars">★★★★★</div>
+        <p class="t-text" data-i18n="reviews.r1.text">C&J completely transformed our kitchen. The craftsmanship is unreal — every detail was perfect. They finished on time and the price was exactly what they quoted. 100% recommend!</p>
+        <div class="t-author">
+          <div class="t-avatar" aria-hidden="true">M</div>
+          <div>
+            <p class="t-name">Maria G.</p>
+            <p class="t-location">Jacksonville, FL</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal" data-delay="2">
+        <div class="t-quote-icon" aria-hidden="true">"</div>
+        <div class="t-stars" aria-label="5 stars">★★★★★</div>
+        <p class="t-text" data-i18n="reviews.r2.text">We got new flooring done throughout the whole first floor. The team was professional, fast, and incredibly clean. The floors look absolutely stunning. Will be calling them for our bathroom next!</p>
+        <div class="t-author">
+          <div class="t-avatar" aria-hidden="true">J</div>
+          <div>
+            <p class="t-name">James R.</p>
+            <p class="t-location">Jacksonville, FL</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal" data-delay="3">
+        <div class="t-quote-icon" aria-hidden="true">"</div>
+        <div class="t-stars" aria-label="5 stars">★★★★★</div>
+        <p class="t-text" data-i18n="reviews.r3.text">They built our pergola and installed new fence — the backyard is now our favorite place. Communication throughout was excellent, and they cleaned up everything perfectly. Luxury in every step, truly.</p>
+        <div class="t-author">
+          <div class="t-avatar" aria-hidden="true">S</div>
+          <div>
+            <p class="t-name">Sandra L.</p>
+            <p class="t-location">Jacksonville, FL</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     CTA BANNER
+════════════════════════════════════════════════ -->
+<div id="cta-banner" role="complementary">
+  <p class="banner-title reveal" data-i18n="cta.title">Your Dream Home<br>Starts with One Call.</p>
+  <p class="banner-sub reveal" data-delay="1" data-i18n="cta.sub">Free quote. No obligation. Licensed &amp; insured.</p>
+  <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;" class="reveal" data-delay="2">
+    <a class="btn-dark" href="#contact" data-i18n="cta.btn1">Get Your Free Quote →</a>
+    <a class="btn-dark" href="tel:+19183781896" style="background:#fff;color:#000;">📞 (918) 378-1896</a>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     CONTACT
+════════════════════════════════════════════════ -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-wrap">
+
+      <div class="contact-info">
+        <p class="section-label reveal" data-i18n="contact.label">Get In Touch</p>
+        <h2 class="section-title reveal" data-delay="1" data-i18n="contact.title">
+          Ready to Start<br><span class="accent">Your Project?</span>
+        </h2>
+        <p class="section-sub reveal" data-delay="2" data-i18n="contact.sub">
+          Tell us about your project and we'll get back to you within 24 hours with a free, no-obligation quote.
+        </p>
+
+        <div class="contact-items">
+          <div class="contact-item reveal" data-delay="1">
+            <div class="c-icon" aria-hidden="true">📞</div>
+            <div>
+              <p class="c-label" data-i18n="contact.phoneLabel">Phone / WhatsApp</p>
+              <p class="c-value"><a href="tel:+19183781896">+1 (918) 378-1896</a></p>
+            </div>
+          </div>
+          <div class="contact-item reveal" data-delay="2">
+            <div class="c-icon" aria-hidden="true">📍</div>
+            <div>
+              <p class="c-label" data-i18n="contact.locLabel">Location</p>
+              <p class="c-value" data-i18n="contact.locValue">Jacksonville, Florida</p>
+            </div>
+          </div>
+          <div class="contact-item reveal" data-delay="3">
+            <div class="c-icon" aria-hidden="true">📸</div>
+            <div>
+              <p class="c-label" data-i18n="contact.followLabel">Follow Our Work</p>
+              <p class="c-value"><a href="https://www.instagram.com/cjsolutionsfl_/" target="_blank" rel="noopener">@cjsolutionsfl_</a></p>
+            </div>
+          </div>
+          <div class="contact-item reveal" data-delay="4">
+            <div class="c-icon" aria-hidden="true">⏰</div>
+            <div>
+              <p class="c-label" data-i18n="contact.hoursLabel">Hours</p>
+              <p class="c-value" data-i18n="contact.hoursValue">Monday–Saturday, 7am–7pm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form reveal" data-delay="2">
+        <form id="quote-form" action="#" method="POST" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname" data-i18n="form.fname">First Name *</label>
+              <input type="text" id="fname" name="fname" placeholder="John" required />
+            </div>
+            <div class="form-group">
+              <label for="lname" data-i18n="form.lname">Last Name *</label>
+              <input type="text" id="lname" name="lname" placeholder="Smith" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email" data-i18n="form.email">Email *</label>
+              <input type="email" id="email" name="email" placeholder="john@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="phone" data-i18n="form.phone">Phone *</label>
+              <input type="tel" id="phone" name="phone" placeholder="(904) 000-0000" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="service" data-i18n="form.service">Service Needed *</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected data-i18n="form.servicePh">Select a service...</option>
+              <option value="kitchen" data-i18n="srv.kitchen">Kitchen Remodeling</option>
+              <option value="bathroom" data-i18n="srv.bathroom">Bathroom Remodeling</option>
+              <option value="flooring" data-i18n="srv.flooring">Flooring</option>
+              <option value="painting" data-i18n="srv.painting">Painting</option>
+              <option value="drywall" data-i18n="srv.drywall">Drywall</option>
+              <option value="carpentry" data-i18n="srv.carpentry">Carpentry</option>
+              <option value="deck" data-i18n="srv.deck">Deck &amp; Pergola</option>
+              <option value="fences" data-i18n="srv.fences">Fences</option>
+              <option value="pavers" data-i18n="srv.pavers">Pavers</option>
+              <option value="handyman" data-i18n="srv.handyman">Handyman Services</option>
+              <option value="other" data-i18n="srv.others">Others</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message" data-i18n="form.message">Tell us about your project</label>
+            <textarea id="message" name="message" data-i18n-placeholder="form.messagePh" placeholder="Describe your project — size, timeline, any specific requirements..."></textarea>
+          </div>
+          <button type="submit" class="form-submit" data-i18n="form.submit">🚀 Request Free Quote</button>
+        </form>
+
+        <div class="form-success" id="form-success" role="alert">
+          <div class="check" aria-hidden="true">✅</div>
+          <h3 data-i18n="form.success.title">Quote Request Sent!</h3>
+          <p data-i18n="form.success.text">We'll contact you within 24 hours to discuss your project. Check your WhatsApp and email.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════ -->
+<footer id="footer" role="contentinfo">
+  <div class="footer-top container">
+    <div class="footer-brand">
+      <div class="logo" aria-label="C&J SolutionsFL">
+        <img src="/assets/img/logo-icon.png" alt="C&J Solutions" style="width:34px;height:34px;object-fit:contain;" />
+        C&amp;J <span>Solutions</span>FL
+      </div>
+      <p data-i18n="footer.brand">Construction &amp; Remodeling specialists in Jacksonville, FL. Luxury in every detail. Quality with a Florida seal.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4 data-i18n="footer.col1">Services</h4>
+      <ul>
+        <li><a href="#services" data-i18n="srv.kitchen">Kitchen Remodeling</a></li>
+        <li><a href="#services" data-i18n="srv.flooring">Flooring</a></li>
+        <li><a href="#services" data-i18n="srv.painting">Painting</a></li>
+        <li><a href="#services" data-i18n="srv.deck">Deck &amp; Pergola</a></li>
+        <li><a href="#services" data-i18n="srv.fences">Fences</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-links">
+      <h4 data-i18n="footer.col2">Company</h4>
+      <ul>
+        <li><a href="#whyus" data-i18n="nav.aboutLong">About Us</a></li>
+        <li><a href="#showcase" data-i18n="nav.work">Our Work</a></li>
+        <li><a href="#testimonials" data-i18n="nav.reviews">Reviews</a></li>
+        <li><a href="#contact" data-i18n="nav.cta">Free Quote</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-links">
+      <h4 data-i18n="footer.col3">Contact</h4>
+      <ul>
+        <li><a href="tel:+19183781896">+1 (918) 378-1896</a></li>
+        <li><a href="https://wa.me/19183781896">WhatsApp</a></li>
+        <li><a href="https://www.instagram.com/cjsolutionsfl_/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><span style="color:var(--white-40);">Jacksonville, FL</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom container">
+    <p data-i18n="footer.copyright">© 2026 C&amp;J SolutionsFL. All rights reserved. Jacksonville, Florida.</p>
+    <div class="footer-socials" aria-label="Social media links">
+      <a class="social-btn" href="https://www.instagram.com/cjsolutionsfl_/" target="_blank" rel="noopener" aria-label="Instagram">📸</a>
+      <a class="social-btn" href="https://wa.me/19183781896" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+      <a class="social-btn" href="tel:+19183781896" aria-label="Call us">📞</a>
+    </div>
+  </div>
+</footer>
+
+<!-- SCRIPTS (CDN — loads from browser when site is open) -->
+<script defer src="js/i18n.js?v=v1"></script>
+<script defer src="js/main.js?v=light-v2-1748180000"></script>
+
 </body>
 </html>
