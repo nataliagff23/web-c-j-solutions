@@ -1,0 +1,581 @@
+{
+  "version": "0.4",
+  "title": "C&J SolutionsFL — Home",
+  "type": "page",
+  "content": [
+    {
+      "id": "sec_hero1",
+      "elType": "section",
+      "settings": {
+        "stretch_section": "section-stretched",
+        "layout": "full_width",
+        "content_position": "middle",
+        "background_background": "classic",
+        "background_color": "#FAF6EA",
+        "background_image": {"url": "https://YOUR-WP-SITE.com/wp-content/uploads/hero-bg.png", "id": ""},
+        "background_position": "center center",
+        "background_repeat": "no-repeat",
+        "background_size": "cover",
+        "background_overlay_background": "gradient",
+        "background_overlay_color": "rgba(250,246,234,0.78)",
+        "background_overlay_color_b": "rgba(250,246,234,0.90)",
+        "background_overlay_gradient_angle": {"unit": "deg", "size": 180},
+        "padding": {"unit": "px", "top": "140", "right": "20", "bottom": "100", "left": "20", "isLinked": false},
+        "min_height": {"unit": "vh", "size": 100}
+      },
+      "elements": [
+        {
+          "id": "col_hero1a",
+          "elType": "column",
+          "settings": {"_column_size": 100, "_inline_size": null, "content_position": "center"},
+          "elements": [
+            {
+              "id": "wgt_kicker",
+              "elType": "widget",
+              "settings": {
+                "title": "📍 Jacksonville, Florida",
+                "header_size": "div",
+                "align": "center",
+                "title_color": "#F47A1F",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {"unit": "px", "size": 12},
+                "typography_font_weight": "600",
+                "typography_letter_spacing": {"unit": "px", "size": 1.5},
+                "typography_text_transform": "uppercase",
+                "_padding": {"unit": "px", "top": "6", "right": "14", "bottom": "6", "left": "14", "isLinked": false},
+                "_border_border": "solid",
+                "_border_width": {"unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true},
+                "_border_color": "rgba(244,122,31,0.45)",
+                "_border_radius": {"unit": "px", "top": "100", "right": "100", "bottom": "100", "left": "100", "isLinked": true}
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "wgt_spacer1",
+              "elType": "widget",
+              "settings": {"space": {"unit": "px", "size": 24}},
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "wgt_title",
+              "elType": "widget",
+              "settings": {
+                "title": "We Build Your <span style=\"color:#F47A1F\">Dream Home.</span><br><span style=\"-webkit-text-stroke:1px rgba(10,10,12,0.55);color:transparent\">We Build to Last.</span>",
+                "header_size": "h1",
+                "align": "center",
+                "title_color": "#0A0A0C",
+                "typography_typography": "custom",
+                "typography_font_family": "Outfit",
+                "typography_font_size": {"unit": "px", "size": 76},
+                "typography_font_size_mobile": {"unit": "px", "size": 38},
+                "typography_font_weight": "900",
+                "typography_letter_spacing": {"unit": "px", "size": -2.5},
+                "typography_line_height": {"unit": "em", "size": 1.05}
+              },
+              "elements": [],
+              "widgetType": "heading"
+            },
+            {
+              "id": "wgt_spacer2",
+              "elType": "widget",
+              "settings": {"space": {"unit": "px", "size": 24}},
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "wgt_sub",
+              "elType": "widget",
+              "settings": {
+                "editor": "<p style=\"text-align:center;max-width:620px;margin:0 auto;\">Construction &amp; remodeling experts in Jacksonville, FL. From LVP flooring and kitchen makeovers to fences, pergolas, and full home additions — <strong>luxury in every detail.</strong></p>",
+                "text_color": "rgba(10,10,12,0.75)",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {"unit": "px", "size": 18},
+                "typography_font_size_mobile": {"unit": "px", "size": 16}
+              },
+              "elements": [],
+              "widgetType": "text-editor"
+            },
+            {
+              "id": "wgt_spacer3",
+              "elType": "widget",
+              "settings": {"space": {"unit": "px", "size": 40}},
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "sec_hero_btns",
+              "elType": "section",
+              "isInner": true,
+              "settings": {
+                "structure": "20",
+                "gap": "default",
+                "content_position": "middle",
+                "align": "center"
+              },
+              "elements": [
+                {
+                  "id": "col_btn1",
+                  "elType": "column",
+                  "settings": {"_column_size": 50, "_inline_size": null, "align_self": "center"},
+                  "elements": [
+                    {
+                      "id": "wgt_btn1",
+                      "elType": "widget",
+                      "settings": {
+                        "text": "🛠️ Get a Free Quote",
+                        "link": {"url": "#contact", "is_external": "", "nofollow": ""},
+                        "align": "right",
+                        "align_mobile": "center",
+                        "background_color": "#F47A1F",
+                        "button_text_color": "#000000",
+                        "hover_color": "#FFFFFF",
+                        "button_background_hover_color": "#0A0A0C",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Outfit",
+                        "typography_font_size": {"unit": "px", "size": 15},
+                        "typography_font_weight": "800",
+                        "border_radius": {"unit": "px", "top": "8", "right": "8", "bottom": "8", "left": "8", "isLinked": true},
+                        "text_padding": {"unit": "px", "top": "15", "right": "32", "bottom": "15", "left": "32", "isLinked": false}
+                      },
+                      "elements": [],
+                      "widgetType": "button"
+                    }
+                  ]
+                },
+                {
+                  "id": "col_btn2",
+                  "elType": "column",
+                  "settings": {"_column_size": 50, "_inline_size": null, "align_self": "center"},
+                  "elements": [
+                    {
+                      "id": "wgt_btn2",
+                      "elType": "widget",
+                      "settings": {
+                        "text": "📸 See Our Work",
+                        "link": {"url": "#showcase", "is_external": "", "nofollow": ""},
+                        "align": "left",
+                        "align_mobile": "center",
+                        "background_color": "rgba(0,0,0,0)",
+                        "button_text_color": "rgba(10,10,12,0.75)",
+                        "border_border": "solid",
+                        "border_width": {"unit": "px", "top": "1.5", "right": "1.5", "bottom": "1.5", "left": "1.5", "isLinked": true},
+                        "border_color": "rgba(244,122,31,0.45)",
+                        "hover_color": "#F47A1F",
+                        "button_background_hover_color": "rgba(244,122,31,0.1)",
+                        "border_hover_color": "#F47A1F",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Outfit",
+                        "typography_font_size": {"unit": "px", "size": 15},
+                        "typography_font_weight": "600",
+                        "border_radius": {"unit": "px", "top": "8", "right": "8", "bottom": "8", "left": "8", "isLinked": true},
+                        "text_padding": {"unit": "px", "top": "14", "right": "28", "bottom": "14", "left": "28", "isLinked": false}
+                      },
+                      "elements": [],
+                      "widgetType": "button"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "wgt_spacer4",
+              "elType": "widget",
+              "settings": {"space": {"unit": "px", "size": 64}},
+              "elements": [],
+              "widgetType": "spacer"
+            },
+            {
+              "id": "sec_stats",
+              "elType": "section",
+              "isInner": true,
+              "settings": {
+                "structure": "40",
+                "gap": "no",
+                "content_width": {"unit": "px", "size": 720}
+              },
+              "elements": [
+                {
+                  "id": "col_s1",
+                  "elType": "column",
+                  "settings": {
+                    "_column_size": 25,
+                    "background_background": "classic",
+                    "background_color": "#E5D8B8",
+                    "border_border": "solid",
+                    "border_width": {"unit": "px", "top": "1", "right": "0", "bottom": "1", "left": "1", "isLinked": false},
+                    "border_color": "rgba(10,10,12,0.10)",
+                    "padding": {"unit": "px", "top": "20", "right": "32", "bottom": "20", "left": "32", "isLinked": false},
+                    "border_radius": {"unit": "px", "top": "12", "right": "0", "bottom": "0", "left": "12", "isLinked": false}
+                  },
+                  "elements": [
+                    {"id": "w_s1n", "elType": "widget", "settings": {"title": "5+", "header_size": "div", "align": "center", "title_color": "#F47A1F", "typography_typography": "custom", "typography_font_family": "Outfit", "typography_font_size": {"unit": "px", "size": 36}, "typography_font_weight": "900"}, "elements": [], "widgetType": "heading"},
+                    {"id": "w_s1l", "elType": "widget", "settings": {"title": "YEARS EXPERIENCE", "header_size": "div", "align": "center", "title_color": "rgba(10,10,12,0.55)", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": {"unit": "px", "size": 12}, "typography_font_weight": "500", "typography_letter_spacing": {"unit": "px", "size": 1}}, "elements": [], "widgetType": "heading"}
+                  ]
+                },
+                {
+                  "id": "col_s2",
+                  "elType": "column",
+                  "settings": {
+                    "_column_size": 25,
+                    "background_background": "classic",
+                    "background_color": "#E5D8B8",
+                    "border_border": "solid",
+                    "border_width": {"unit": "px", "top": "1", "right": "0", "bottom": "1", "left": "1", "isLinked": false},
+                    "border_color": "rgba(10,10,12,0.10)",
+                    "padding": {"unit": "px", "top": "20", "right": "32", "bottom": "20", "left": "32", "isLinked": false}
+                  },
+                  "elements": [
+                    {"id": "w_s2n", "elType": "widget", "settings": {"title": "300+", "header_size": "div", "align": "center", "title_color": "#F47A1F", "typography_typography": "custom", "typography_font_family": "Outfit", "typography_font_size": {"unit": "px", "size": 36}, "typography_font_weight": "900"}, "elements": [], "widgetType": "heading"},
+                    {"id": "w_s2l", "elType": "widget", "settings": {"title": "PROJECTS COMPLETED", "header_size": "div", "align": "center", "title_color": "rgba(10,10,12,0.55)", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": {"unit": "px", "size": 12}, "typography_font_weight": "500", "typography_letter_spacing": {"unit": "px", "size": 1}}, "elements": [], "widgetType": "heading"}
+                  ]
+                },
+                {
+                  "id": "col_s3",
+                  "elType": "column",
+                  "settings": {
+                    "_column_size": 25,
+                    "background_background": "classic",
+                    "background_color": "#E5D8B8",
+                    "border_border": "solid",
+                    "border_width": {"unit": "px", "top": "1", "right": "0", "bottom": "1", "left": "1", "isLinked": false},
+                    "border_color": "rgba(10,10,12,0.10)",
+                    "padding": {"unit": "px", "top": "20", "right": "32", "bottom": "20", "left": "32", "isLinked": false}
+                  },
+                  "elements": [
+                    {"id": "w_s3n", "elType": "widget", "settings": {"title": "100%", "header_size": "div", "align": "center", "title_color": "#F47A1F", "typography_typography": "custom", "typography_font_family": "Outfit", "typography_font_size": {"unit": "px", "size": 36}, "typography_font_weight": "900"}, "elements": [], "widgetType": "heading"},
+                    {"id": "w_s3l", "elType": "widget", "settings": {"title": "SATISFACTION", "header_size": "div", "align": "center", "title_color": "rgba(10,10,12,0.55)", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": {"unit": "px", "size": 12}, "typography_font_weight": "500", "typography_letter_spacing": {"unit": "px", "size": 1}}, "elements": [], "widgetType": "heading"}
+                  ]
+                },
+                {
+                  "id": "col_s4",
+                  "elType": "column",
+                  "settings": {
+                    "_column_size": 25,
+                    "background_background": "classic",
+                    "background_color": "#E5D8B8",
+                    "border_border": "solid",
+                    "border_width": {"unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": false},
+                    "border_color": "rgba(10,10,12,0.10)",
+                    "padding": {"unit": "px", "top": "20", "right": "32", "bottom": "20", "left": "32", "isLinked": false},
+                    "border_radius": {"unit": "px", "top": "0", "right": "12", "bottom": "12", "left": "0", "isLinked": false}
+                  },
+                  "elements": [
+                    {"id": "w_s4n", "elType": "widget", "settings": {"title": "5★", "header_size": "div", "align": "center", "title_color": "#F47A1F", "typography_typography": "custom", "typography_font_family": "Outfit", "typography_font_size": {"unit": "px", "size": 36}, "typography_font_weight": "900"}, "elements": [], "widgetType": "heading"},
+                    {"id": "w_s4l", "elType": "widget", "settings": {"title": "RATED", "header_size": "div", "align": "center", "title_color": "rgba(10,10,12,0.55)", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": {"unit": "px", "size": 12}, "typography_font_weight": "500", "typography_letter_spacing": {"unit": "px", "size": 1}}, "elements": [], "widgetType": "heading"}
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sec_services_head",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#F3EBD5",
+        "padding": {"unit": "px", "top": "100", "right": "20", "bottom": "40", "left": "20", "isLinked": false}
+      },
+      "elements": [
+        {
+          "id": "col_sh",
+          "elType": "column",
+          "settings": {"_column_size": 100, "_inline_size": null},
+          "elements": [
+            {"id": "w_sh_lbl", "elType": "widget", "settings": {"title": "WHAT WE DO", "header_size": "div", "align": "left", "title_color": "#F47A1F", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": {"unit": "px", "size": 12}, "typography_font_weight": "600", "typography_letter_spacing": {"unit": "px", "size": 1.8}}, "elements": [], "widgetType": "heading"},
+            {"id": "w_sh_spc", "elType": "widget", "settings": {"space": {"unit": "px", "size": 16}}, "elements": [], "widgetType": "spacer"},
+            {"id": "w_sh_t", "elType": "widget", "settings": {"title": "Full-Scope <span style=\"color:#F47A1F\">Remodeling</span><br>&amp; Construction", "header_size": "h2", "align": "left", "title_color": "#0A0A0C", "typography_typography": "custom", "typography_font_family": "Outfit", "typography_font_size": {"unit": "px", "size": 52}, "typography_font_size_mobile": {"unit": "px", "size": 32}, "typography_font_weight": "900", "typography_letter_spacing": {"unit": "px", "size": -1.5}}, "elements": [], "widgetType": "heading"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sec_services_grid",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#F3EBD5",
+        "padding": {"unit": "px", "top": "0", "right": "20", "bottom": "100", "left": "20", "isLinked": false}
+      },
+      "elements": [
+        {"id": "col_svc1", "elType": "column", "settings": {"_column_size": 33, "_inline_size": 33.33, "_inline_size_mobile": 100, "background_background": "classic", "background_color": "#FFFCF2", "border_border": "solid", "border_width": {"unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true}, "border_color": "rgba(10,10,12,0.10)", "padding": {"unit": "px", "top": "36", "right": "32", "bottom": "36", "left": "32", "isLinked": false}}, "elements": [
+          {"id": "w_svc1", "elType": "widget", "settings": {"selected_icon": {"value": "fas fa-th-large", "library": "fa-solid"}, "title_text": "LVP Flooring", "description_text": "Luxury Vinyl Plank installation — durable, waterproof, and beautiful. Perfect for Florida homes.", "position": "top", "primary_color": "#F47A1F", "title_color": "#0A0A0C", "description_color": "rgba(10,10,12,0.55)", "title_typography_typography": "custom", "title_typography_font_family": "Outfit", "title_typography_font_size": {"unit": "px", "size": 19}, "title_typography_font_weight": "700", "description_typography_typography": "custom", "description_typography_font_family": "Inter", "description_typography_font_size": {"unit": "px", "size": 14}, "icon_size": {"unit": "px", "size": 38}}, "elements": [], "widgetType": "icon-box"}
+        ]},
+        {"id": "col_svc2", "elType": "column", "settings": {"_column_size": 33, "_inline_size": 33.33, "_inline_size_mobile": 100, "background_background": "classic", "background_color": "#FFFCF2", "border_border": "solid", "border_width": {"unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true}, "border_color": "rgba(10,10,12,0.10)", "padding": {"unit": "px", "top": "36", "right": "32", "bottom": "36", "left": "32", "isLinked": false}}, "elements": [
+          {"id": "w_svc2", "elType": "widget", "settings": {"selected_icon": {"value": "fas fa-utensils", "library": "fa-solid"}, "title_text": "Kitchen Remodeling", "description_text": "Complete kitchen transformations — cabinetry, countertops, backsplash, and layout redesigns.", "position": "top", "primary_color": "#F47A1F", "title_color": "#0A0A0C", "description_color": "rgba(10,10,12,0.55)", "title_typography_typography": "custom", "title_typography_font_family": "Outfit", "title_typography_font_size": {"unit": "px", "size": 19}, "title_typography_font_weight": "700", "description_typography_typography": "custom", "description_typography_font_family": "Inter", "description_typography_font_size": {"unit": "px", "size": 14}, "icon_size": {"unit": "px", "size": 38}}, "elements": [], "widgetType": "icon-box"}
+        ]},
+        {"id": "col_svc3", "elType": "column", "settings": {"_column_size": 33, "_inline_size": 33.33, "_inline_size_mobile": 100, "background_background": "classic", "background_color": "#FFFCF2", "border_border": "solid", "border_width": {"unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true}, "border_color": "rgba(10,10,12,0.10)", "padding": {"unit": "px", "top": "36", "right": "32", "bottom": "36", "left": "32", "isLinked": false}}, "elements": [
+          {"id": "w_svc3", "elType": "widget", "settings": {"selected_icon": {"value": "fas fa-paint-roller", "library": "fa-solid"}, "title_text": "Exterior Paint", "description_text": "Professional exterior painting that protects and elevates your home's curb appeal.", "position": "top", "primary_color": "#F47A1F", "title_color": "#0A0A0C", "description_color": "rgba(10,10,12,0.55)", "title_typography_typography": "custom", "title_typography_font_family": "Outfit", "title_typography_font_size": {"unit": "px", "size": 19}, "title_typography_font_weight": "700", "description_typography_typography": "custom", "description_typography_font_family": "Inter", "description_typography_font_size": {"unit": "px", "size": 14}, "icon_size": {"unit": "px", "size": 38}}, "elements": [], "widgetType": "icon-box"}
+        ]},
+        {"id": "col_svc4", "elType": "column", "settings": {"_column_size": 33, "_inline_size": 33.33, "_inline_size_mobile": 100, "background_background": "classic", "background_color": "#FFFCF2", "border_border": "solid", "border_width": {"unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true}, "border_color": "rgba(10,10,12,0.10)", "padding": {"unit": "px", "top": "36", "right": "32", "bottom": "36", "left": "32", "isLinked": false}}, "elements": [
+          {"id": "w_svc4", "elType": "widget", "settings": {"selected_icon": {"value": "fas fa-cubes", "library": "fa-solid"}, "title_text": "Drywall", "description_text": "Installation, repair, and finishing — seamless walls and ceilings with impeccable results.", "position": "top", "primary_color": "#F47A1F", "title_color": "#0A0A0C", "description_color": "rgba(10,10,12,0.55)", "title_typography_typography": "custom", "title_typography_font_family": "Outfit", "title_typography_font_size": {"unit": "px", "size": 19}, "title_typography_font_weight": "700", "description_typography_typography": "custom", "description_typography_font_family": "Inter", "description_typography_font_size": {"unit": "px", "size": 14}, "icon_size": {"unit": "px", "size": 38}}, "elements": [], "widgetType": "icon-box"}
+        ]},
+        {"id": "col_svc5", "elType": "column", "settings": {"_column_size": 33, "_inline_size": 33.33, "_inline_size_mobile": 100, "background_background": "classic", "background_color": "#FFFCF2", "border_border": "solid", "border_width": {"unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true}, "border_color": "rgba(10,10,12,0.10)", "padding": {"unit": "px", "top": "36", "right": "32", "bottom": "36", "left": "32", "isLinked": false}}, "elements": [
+          {"id": "w_svc5", "elType": "widget", "settings": {"selected_icon": {"value": "fas fa-tree", "library": "fa-solid"}, "title_text": "Fence & Pergola", "description_text": "Custom fencing and pergolas that transform your outdoor space into a true extension of your home.", "position": "top", "primary_color": "#F47A1F", "title_color": "#0A0A0C", "description_color": "rgba(10,10,12,0.55)", "title_typography_typography": "custom", "title_typography_font_family": "Outfit", "title_typography_font_size": {"unit": "px", "size": 19}, "title_typography_font_weight": "700", "description_typography_typography": "custom", "description_typography_font_family": "Inter", "description_typography_font_size": {"unit": "px", "size": 14}, "icon_size": {"unit": "px", "size": 38}}, "elements": [], "widgetType": "icon-box"}
+        ]},
+        {"id": "col_svc6", "elType": "column", "settings": {"_column_size": 33, "_inline_size": 33.33, "_inline_size_mobile": 100, "background_background": "classic", "background_color": "#FFFCF2", "border_border": "solid", "border_width": {"unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true}, "border_color": "rgba(10,10,12,0.10)", "padding": {"unit": "px", "top": "36", "right": "32", "bottom": "36", "left": "32", "isLinked": false}}, "elements": [
+          {"id": "w_svc6", "elType": "widget", "settings": {"selected_icon": {"value": "fas fa-volume-up", "library": "fa-solid"}, "title_text": "Acoustic Ceiling", "description_text": "Acoustic tile installation and removal — modern, clean ceilings for homes and offices.", "position": "top", "primary_color": "#F47A1F", "title_color": "#0A0A0C", "description_color": "rgba(10,10,12,0.55)", "title_typography_typography": "custom", "title_typography_font_family": "Outfit", "title_typography_font_size": {"unit": "px", "size": 19}, "title_typography_font_weight": "700", "description_typography_typography": "custom", "description_typography_font_family": "Inter", "description_typography_font_size": {"unit": "px", "size": 14}, "icon_size": {"unit": "px", "size": 38}}, "elements": [], "widgetType": "icon-box"}
+        ]},
+        {"id": "col_svc7", "elType": "column", "settings": {"_column_size": 33, "_inline_size": 33.33, "_inline_size_mobile": 100, "background_background": "classic", "background_color": "#FFFCF2", "border_border": "solid", "border_width": {"unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true}, "border_color": "rgba(10,10,12,0.10)", "padding": {"unit": "px", "top": "36", "right": "32", "bottom": "36", "left": "32", "isLinked": false}}, "elements": [
+          {"id": "w_svc7", "elType": "widget", "settings": {"selected_icon": {"value": "fas fa-shower", "library": "fa-solid"}, "title_text": "Bathroom Remodeling", "description_text": "Full bath renovations — tile, vanities, showers, and flooring. Your personal spa awaits.", "position": "top", "primary_color": "#F47A1F", "title_color": "#0A0A0C", "description_color": "rgba(10,10,12,0.55)", "title_typography_typography": "custom", "title_typography_font_family": "Outfit", "title_typography_font_size": {"unit": "px", "size": 19}, "title_typography_font_weight": "700", "description_typography_typography": "custom", "description_typography_font_family": "Inter", "description_typography_font_size": {"unit": "px", "size": 14}, "icon_size": {"unit": "px", "size": 38}}, "elements": [], "widgetType": "icon-box"}
+        ]},
+        {"id": "col_svc8", "elType": "column", "settings": {"_column_size": 33, "_inline_size": 33.33, "_inline_size_mobile": 100, "background_background": "classic", "background_color": "#FFFCF2", "border_border": "solid", "border_width": {"unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true}, "border_color": "rgba(10,10,12,0.10)", "padding": {"unit": "px", "top": "36", "right": "32", "bottom": "36", "left": "32", "isLinked": false}}, "elements": [
+          {"id": "w_svc8", "elType": "widget", "settings": {"selected_icon": {"value": "fas fa-home", "library": "fa-solid"}, "title_text": "Home Addition", "description_text": "Expanding your living space with structural additions — rooms, sunrooms, and more.", "position": "top", "primary_color": "#F47A1F", "title_color": "#0A0A0C", "description_color": "rgba(10,10,12,0.55)", "title_typography_typography": "custom", "title_typography_font_family": "Outfit", "title_typography_font_size": {"unit": "px", "size": 19}, "title_typography_font_weight": "700", "description_typography_typography": "custom", "description_typography_font_family": "Inter", "description_typography_font_size": {"unit": "px", "size": 14}, "icon_size": {"unit": "px", "size": 38}}, "elements": [], "widgetType": "icon-box"}
+        ]},
+        {"id": "col_svc9", "elType": "column", "settings": {"_column_size": 33, "_inline_size": 33.33, "_inline_size_mobile": 100, "background_background": "classic", "background_color": "#FFFCF2", "border_border": "solid", "border_width": {"unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true}, "border_color": "rgba(10,10,12,0.10)", "padding": {"unit": "px", "top": "36", "right": "32", "bottom": "36", "left": "32", "isLinked": false}}, "elements": [
+          {"id": "w_svc9", "elType": "widget", "settings": {"selected_icon": {"value": "fas fa-toolbox", "library": "fa-solid"}, "title_text": "Custom Built-ins", "description_text": "Custom mudroom organizers, entertainment centers, and storage solutions built to fit your space.", "position": "top", "primary_color": "#F47A1F", "title_color": "#0A0A0C", "description_color": "rgba(10,10,12,0.55)", "title_typography_typography": "custom", "title_typography_font_family": "Outfit", "title_typography_font_size": {"unit": "px", "size": 19}, "title_typography_font_weight": "700", "description_typography_typography": "custom", "description_typography_font_family": "Inter", "description_typography_font_size": {"unit": "px", "size": 14}, "icon_size": {"unit": "px", "size": 38}}, "elements": [], "widgetType": "icon-box"}
+        ]}
+      ]
+    },
+    {
+      "id": "sec_portfolio",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#FAF6EA",
+        "padding": {"unit": "px", "top": "100", "right": "20", "bottom": "100", "left": "20", "isLinked": false}
+      },
+      "elements": [
+        {"id": "col_pf", "elType": "column", "settings": {"_column_size": 100, "_inline_size": null}, "elements": [
+          {"id": "w_pf_lbl", "elType": "widget", "settings": {"title": "PORTFOLIO", "header_size": "div", "align": "center", "title_color": "#F47A1F", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": {"unit": "px", "size": 12}, "typography_font_weight": "600", "typography_letter_spacing": {"unit": "px", "size": 1.8}}, "elements": [], "widgetType": "heading"},
+          {"id": "w_pf_spc1", "elType": "widget", "settings": {"space": {"unit": "px", "size": 16}}, "elements": [], "widgetType": "spacer"},
+          {"id": "w_pf_t", "elType": "widget", "settings": {"title": "Featured <span style=\"color:#F47A1F\">Projects.</span>", "header_size": "h2", "align": "center", "title_color": "#0A0A0C", "typography_typography": "custom", "typography_font_family": "Outfit", "typography_font_size": {"unit": "px", "size": 52}, "typography_font_size_mobile": {"unit": "px", "size": 32}, "typography_font_weight": "900", "typography_letter_spacing": {"unit": "px", "size": -1.5}}, "elements": [], "widgetType": "heading"},
+          {"id": "w_pf_spc2", "elType": "widget", "settings": {"space": {"unit": "px", "size": 16}}, "elements": [], "widgetType": "spacer"},
+          {"id": "w_pf_sub", "elType": "widget", "settings": {"editor": "<p style=\"text-align:center;max-width:600px;margin:0 auto;\">A curated selection of our recent construction and remodeling work across Jacksonville and Central Florida.</p>", "text_color": "rgba(10,10,12,0.75)", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": {"unit": "px", "size": 17}}, "elements": [], "widgetType": "text-editor"},
+          {"id": "w_pf_spc3", "elType": "widget", "settings": {"space": {"unit": "px", "size": 48}}, "elements": [], "widgetType": "spacer"}
+        ]}
+      ]
+    },
+    {
+      "id": "sec_pf_cards",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#FAF6EA",
+        "structure": "30",
+        "padding": {"unit": "px", "top": "0", "right": "20", "bottom": "100", "left": "20", "isLinked": false}
+      },
+      "elements": [
+        {"id": "col_pf1", "elType": "column", "settings": {"_column_size": 33, "_inline_size": null, "background_background": "classic", "background_color": "#FFFCF2", "border_border": "solid", "border_width": {"unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true}, "border_color": "rgba(10,10,12,0.10)", "border_radius": {"unit": "px", "top": "14", "right": "14", "bottom": "14", "left": "14", "isLinked": true}, "padding": {"unit": "px", "top": "28", "right": "28", "bottom": "28", "left": "28", "isLinked": false}}, "elements": [
+          {"id": "w_pf1_cat", "elType": "widget", "settings": {"title": "KITCHEN REMODEL", "header_size": "div", "align": "left", "title_color": "#F47A1F", "typography_typography": "custom", "typography_font_family": "Outfit", "typography_font_size": {"unit": "px", "size": 11}, "typography_font_weight": "700", "typography_letter_spacing": {"unit": "px", "size": 1.6}}, "elements": [], "widgetType": "heading"},
+          {"id": "w_pf1_num", "elType": "widget", "settings": {"title": "01", "header_size": "div", "align": "right", "title_color": "rgba(45,45,51,0.14)", "typography_typography": "custom", "typography_font_family": "Outfit", "typography_font_size": {"unit": "px", "size": 100}, "typography_font_weight": "900", "typography_letter_spacing": {"unit": "px", "size": -5}}, "elements": [], "widgetType": "heading"},
+          {"id": "w_pf1_h", "elType": "widget", "settings": {"title": "Kitchen Transformation", "header_size": "h3", "title_color": "#0A0A0C", "typography_typography": "custom", "typography_font_family": "Outfit", "typography_font_size": {"unit": "px", "size": 18}, "typography_font_weight": "800"}, "elements": [], "widgetType": "heading"},
+          {"id": "w_pf1_d", "elType": "widget", "settings": {"editor": "<p>Full remodel — new cabinets, countertops &amp; backsplash · Jacksonville, FL</p>", "text_color": "rgba(10,10,12,0.55)", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": {"unit": "px", "size": 14}}, "elements": [], "widgetType": "text-editor"}
+        ]},
+        {"id": "col_pf2", "elType": "column", "settings": {"_column_size": 33, "_inline_size": null, "background_background": "classic", "background_color": "#FFFCF2", "border_border": "solid", "border_width": {"unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true}, "border_color": "rgba(10,10,12,0.10)", "border_radius": {"unit": "px", "top": "14", "right": "14", "bottom": "14", "left": "14", "isLinked": true}, "padding": {"unit": "px", "top": "28", "right": "28", "bottom": "28", "left": "28", "isLinked": false}}, "elements": [
+          {"id": "w_pf2_cat", "elType": "widget", "settings": {"title": "LVP FLOORING", "header_size": "div", "align": "left", "title_color": "#F47A1F", "typography_typography": "custom", "typography_font_family": "Outfit", "typography_font_size": {"unit": "px", "size": 11}, "typography_font_weight": "700", "typography_letter_spacing": {"unit": "px", "size": 1.6}}, "elements": [], "widgetType": "heading"},
+          {"id": "w_pf2_num", "elType": "widget", "settings": {"title": "02", "header_size": "div", "align": "right", "title_color": "rgba(45,45,51,0.14)", "typography_typography": "custom", "typography_font_family": "Outfit", "typography_font_size": {"unit": "px", "size": 100}, "typography_font_weight": "900", "typography_letter_spacing": {"unit": "px", "size": -5}}, "elements": [], "widgetType": "heading"},
+          {"id": "w_pf2_h", "elType": "widget", "settings": {"title": "Open Floor Plan", "header_size": "h3", "title_color": "#0A0A0C", "typography_typography": "custom", "typography_font_family": "Outfit", "typography_font_size": {"unit": "px", "size": 18}, "typography_font_weight": "800"}, "elements": [], "widgetType": "heading"},
+          {"id": "w_pf2_d", "elType": "widget", "settings": {"editor": "<p>Luxury Vinyl Plank throughout main level · 2,100 sq ft</p>", "text_color": "rgba(10,10,12,0.55)", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": {"unit": "px", "size": 14}}, "elements": [], "widgetType": "text-editor"}
+        ]},
+        {"id": "col_pf3", "elType": "column", "settings": {"_column_size": 33, "_inline_size": null, "background_background": "classic", "background_color": "#FFFCF2", "border_border": "solid", "border_width": {"unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true}, "border_color": "rgba(10,10,12,0.10)", "border_radius": {"unit": "px", "top": "14", "right": "14", "bottom": "14", "left": "14", "isLinked": true}, "padding": {"unit": "px", "top": "28", "right": "28", "bottom": "28", "left": "28", "isLinked": false}}, "elements": [
+          {"id": "w_pf3_cat", "elType": "widget", "settings": {"title": "EXTERIOR PAINT", "header_size": "div", "align": "left", "title_color": "#F47A1F", "typography_typography": "custom", "typography_font_family": "Outfit", "typography_font_size": {"unit": "px", "size": 11}, "typography_font_weight": "700", "typography_letter_spacing": {"unit": "px", "size": 1.6}}, "elements": [], "widgetType": "heading"},
+          {"id": "w_pf3_num", "elType": "widget", "settings": {"title": "03", "header_size": "div", "align": "right", "title_color": "rgba(45,45,51,0.14)", "typography_typography": "custom", "typography_font_family": "Outfit", "typography_font_size": {"unit": "px", "size": 100}, "typography_font_weight": "900", "typography_letter_spacing": {"unit": "px", "size": -5}}, "elements": [], "widgetType": "heading"},
+          {"id": "w_pf3_h", "elType": "widget", "settings": {"title": "Exterior Paint Refresh", "header_size": "h3", "title_color": "#0A0A0C", "typography_typography": "custom", "typography_font_family": "Outfit", "typography_font_size": {"unit": "px", "size": 18}, "typography_font_weight": "800"}, "elements": [], "widgetType": "heading"},
+          {"id": "w_pf3_d", "elType": "widget", "settings": {"editor": "<p>Full exterior repaint + trim · Immediate curb appeal boost</p>", "text_color": "rgba(10,10,12,0.55)", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": {"unit": "px", "size": 14}}, "elements": [], "widgetType": "text-editor"}
+        ]}
+      ]
+    },
+    {
+      "id": "sec_process",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#F3EBD5",
+        "padding": {"unit": "px", "top": "100", "right": "20", "bottom": "100", "left": "20", "isLinked": false}
+      },
+      "elements": [
+        {"id": "col_pr", "elType": "column", "settings": {"_column_size": 100, "_inline_size": null}, "elements": [
+          {"id": "w_pr_lbl", "elType": "widget", "settings": {"title": "HOW IT WORKS", "header_size": "div", "align": "left", "title_color": "#F47A1F", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": {"unit": "px", "size": 12}, "typography_font_weight": "600", "typography_letter_spacing": {"unit": "px", "size": 1.8}}, "elements": [], "widgetType": "heading"},
+          {"id": "w_pr_spc1", "elType": "widget", "settings": {"space": {"unit": "px", "size": 16}}, "elements": [], "widgetType": "spacer"},
+          {"id": "w_pr_t", "elType": "widget", "settings": {"title": "Simple Process. <span style=\"color:#F47A1F\">Exceptional Results.</span>", "header_size": "h2", "align": "left", "title_color": "#0A0A0C", "typography_typography": "custom", "typography_font_family": "Outfit", "typography_font_size": {"unit": "px", "size": 52}, "typography_font_size_mobile": {"unit": "px", "size": 32}, "typography_font_weight": "900", "typography_letter_spacing": {"unit": "px", "size": -1.5}}, "elements": [], "widgetType": "heading"},
+          {"id": "w_pr_spc2", "elType": "widget", "settings": {"space": {"unit": "px", "size": 48}}, "elements": [], "widgetType": "spacer"}
+        ]}
+      ]
+    },
+    {
+      "id": "sec_process_steps",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#F3EBD5",
+        "structure": "40",
+        "padding": {"unit": "px", "top": "0", "right": "20", "bottom": "100", "left": "20", "isLinked": false}
+      },
+      "elements": [
+        {"id": "col_st1", "elType": "column", "settings": {"_column_size": 25, "background_background": "classic", "background_color": "#FFFCF2", "border_border": "solid", "border_width": {"unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true}, "border_color": "rgba(10,10,12,0.10)", "padding": {"unit": "px", "top": "36", "right": "28", "bottom": "36", "left": "28", "isLinked": false}}, "elements": [
+          {"id": "w_st1_n", "elType": "widget", "settings": {"title": "STEP 01", "header_size": "div", "title_color": "#F47A1F", "typography_typography": "custom", "typography_font_family": "Outfit", "typography_font_size": {"unit": "px", "size": 12}, "typography_font_weight": "800", "typography_letter_spacing": {"unit": "px", "size": 1.8}}, "elements": [], "widgetType": "heading"},
+          {"id": "w_st1_i", "elType": "widget", "settings": {"selected_icon": {"value": "fas fa-phone", "library": "fa-solid"}, "primary_color": "#F47A1F", "size": {"unit": "px", "size": 28}, "align": "left"}, "elements": [], "widgetType": "icon"},
+          {"id": "w_st1_h", "elType": "widget", "settings": {"title": "Free Consultation", "header_size": "h3", "title_color": "#0A0A0C", "typography_typography": "custom", "typography_font_family": "Outfit", "typography_font_size": {"unit": "px", "size": 18}, "typography_font_weight": "700"}, "elements": [], "widgetType": "heading"},
+          {"id": "w_st1_d", "elType": "widget", "settings": {"editor": "<p>Call or message us. We discuss your vision, needs, and budget — no pressure, no obligation.</p>", "text_color": "rgba(10,10,12,0.55)", "typography_typography": "custom", "typography_font_size": {"unit": "px", "size": 14}}, "elements": [], "widgetType": "text-editor"}
+        ]},
+        {"id": "col_st2", "elType": "column", "settings": {"_column_size": 25, "background_background": "classic", "background_color": "#FFFCF2", "border_border": "solid", "border_width": {"unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true}, "border_color": "rgba(10,10,12,0.10)", "padding": {"unit": "px", "top": "36", "right": "28", "bottom": "36", "left": "28", "isLinked": false}}, "elements": [
+          {"id": "w_st2_n", "elType": "widget", "settings": {"title": "STEP 02", "header_size": "div", "title_color": "#F47A1F", "typography_typography": "custom", "typography_font_family": "Outfit", "typography_font_size": {"unit": "px", "size": 12}, "typography_font_weight": "800", "typography_letter_spacing": {"unit": "px", "size": 1.8}}, "elements": [], "widgetType": "heading"},
+          {"id": "w_st2_i", "elType": "widget", "settings": {"selected_icon": {"value": "fas fa-clipboard-list", "library": "fa-solid"}, "primary_color": "#F47A1F", "size": {"unit": "px", "size": 28}, "align": "left"}, "elements": [], "widgetType": "icon"},
+          {"id": "w_st2_h", "elType": "widget", "settings": {"title": "Detailed Quote", "header_size": "h3", "title_color": "#0A0A0C", "typography_typography": "custom", "typography_font_family": "Outfit", "typography_font_size": {"unit": "px", "size": 18}, "typography_font_weight": "700"}, "elements": [], "widgetType": "heading"},
+          {"id": "w_st2_d", "elType": "widget", "settings": {"editor": "<p>We visit your property, take measurements, and deliver a transparent itemized quote.</p>", "text_color": "rgba(10,10,12,0.55)", "typography_typography": "custom", "typography_font_size": {"unit": "px", "size": 14}}, "elements": [], "widgetType": "text-editor"}
+        ]},
+        {"id": "col_st3", "elType": "column", "settings": {"_column_size": 25, "background_background": "classic", "background_color": "#FFFCF2", "border_border": "solid", "border_width": {"unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true}, "border_color": "rgba(10,10,12,0.10)", "padding": {"unit": "px", "top": "36", "right": "28", "bottom": "36", "left": "28", "isLinked": false}}, "elements": [
+          {"id": "w_st3_n", "elType": "widget", "settings": {"title": "STEP 03", "header_size": "div", "title_color": "#F47A1F", "typography_typography": "custom", "typography_font_family": "Outfit", "typography_font_size": {"unit": "px", "size": 12}, "typography_font_weight": "800", "typography_letter_spacing": {"unit": "px", "size": 1.8}}, "elements": [], "widgetType": "heading"},
+          {"id": "w_st3_i", "elType": "widget", "settings": {"selected_icon": {"value": "fas fa-tools", "library": "fa-solid"}, "primary_color": "#F47A1F", "size": {"unit": "px", "size": 28}, "align": "left"}, "elements": [], "widgetType": "icon"},
+          {"id": "w_st3_h", "elType": "widget", "settings": {"title": "We Get to Work", "header_size": "h3", "title_color": "#0A0A0C", "typography_typography": "custom", "typography_font_family": "Outfit", "typography_font_size": {"unit": "px", "size": 18}, "typography_font_weight": "700"}, "elements": [], "widgetType": "heading"},
+          {"id": "w_st3_d", "elType": "widget", "settings": {"editor": "<p>Our skilled crew starts on schedule. You get daily updates and zero surprises.</p>", "text_color": "rgba(10,10,12,0.55)", "typography_typography": "custom", "typography_font_size": {"unit": "px", "size": 14}}, "elements": [], "widgetType": "text-editor"}
+        ]},
+        {"id": "col_st4", "elType": "column", "settings": {"_column_size": 25, "background_background": "classic", "background_color": "#FFFCF2", "border_border": "solid", "border_width": {"unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true}, "border_color": "rgba(10,10,12,0.10)", "padding": {"unit": "px", "top": "36", "right": "28", "bottom": "36", "left": "28", "isLinked": false}}, "elements": [
+          {"id": "w_st4_n", "elType": "widget", "settings": {"title": "STEP 04", "header_size": "div", "title_color": "#F47A1F", "typography_typography": "custom", "typography_font_family": "Outfit", "typography_font_size": {"unit": "px", "size": 12}, "typography_font_weight": "800", "typography_letter_spacing": {"unit": "px", "size": 1.8}}, "elements": [], "widgetType": "heading"},
+          {"id": "w_st4_i", "elType": "widget", "settings": {"selected_icon": {"value": "fas fa-trophy", "library": "fa-solid"}, "primary_color": "#F47A1F", "size": {"unit": "px", "size": 28}, "align": "left"}, "elements": [], "widgetType": "icon"},
+          {"id": "w_st4_h", "elType": "widget", "settings": {"title": "Final Walkthrough", "header_size": "h3", "title_color": "#0A0A0C", "typography_typography": "custom", "typography_font_family": "Outfit", "typography_font_size": {"unit": "px", "size": 18}, "typography_font_weight": "700"}, "elements": [], "widgetType": "heading"},
+          {"id": "w_st4_d", "elType": "widget", "settings": {"editor": "<p>We walk you through every detail. 100% satisfied? Then the job is done right.</p>", "text_color": "rgba(10,10,12,0.55)", "typography_typography": "custom", "typography_font_size": {"unit": "px", "size": 14}}, "elements": [], "widgetType": "text-editor"}
+        ]}
+      ]
+    },
+    {
+      "id": "sec_whyus",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#2D2D33",
+        "padding": {"unit": "px", "top": "100", "right": "20", "bottom": "100", "left": "20", "isLinked": false},
+        "structure": "20"
+      },
+      "elements": [
+        {"id": "col_wu1", "elType": "column", "settings": {"_column_size": 50, "_inline_size": null, "background_background": "classic", "background_color": "rgba(255,255,255,0.04)", "border_border": "solid", "border_width": {"unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true}, "border_color": "rgba(255,255,255,0.08)", "border_radius": {"unit": "px", "top": "12", "right": "12", "bottom": "12", "left": "12", "isLinked": true}, "padding": {"unit": "px", "top": "60", "right": "40", "bottom": "60", "left": "40", "isLinked": false}, "min_height": {"unit": "px", "size": 480}}, "elements": [
+          {"id": "w_wu_ph", "elType": "widget", "settings": {"selected_icon": {"value": "fas fa-hard-hat", "library": "fa-solid"}, "primary_color": "#F47A1F", "size": {"unit": "px", "size": 80}, "align": "center"}, "elements": [], "widgetType": "icon"},
+          {"id": "w_wu_spc", "elType": "widget", "settings": {"space": {"unit": "px", "size": 16}}, "elements": [], "widgetType": "spacer"},
+          {"id": "w_wu_phT", "elType": "widget", "settings": {"editor": "<p style=\"text-align:center;\">Replace this with a team or project photo</p>", "text_color": "rgba(255,255,255,0.55)", "typography_typography": "custom", "typography_font_size": {"unit": "px", "size": 13}}, "elements": [], "widgetType": "text-editor"}
+        ]},
+        {"id": "col_wu2", "elType": "column", "settings": {"_column_size": 50, "_inline_size": null, "padding": {"unit": "px", "top": "0", "right": "20", "bottom": "0", "left": "40", "isLinked": false}}, "elements": [
+          {"id": "w_wu_lbl", "elType": "widget", "settings": {"title": "WHY C&J SOLUTIONSFL", "header_size": "div", "title_color": "#F47A1F", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": {"unit": "px", "size": 12}, "typography_font_weight": "600", "typography_letter_spacing": {"unit": "px", "size": 1.8}}, "elements": [], "widgetType": "heading"},
+          {"id": "w_wu_spc1", "elType": "widget", "settings": {"space": {"unit": "px", "size": 16}}, "elements": [], "widgetType": "spacer"},
+          {"id": "w_wu_t", "elType": "widget", "settings": {"title": "We Don't Just Build.<br><span style=\"color:#F47A1F\">We Transform.</span>", "header_size": "h2", "title_color": "#FFFFFF", "typography_typography": "custom", "typography_font_family": "Outfit", "typography_font_size": {"unit": "px", "size": 48}, "typography_font_size_mobile": {"unit": "px", "size": 30}, "typography_font_weight": "900", "typography_letter_spacing": {"unit": "px", "size": -1.5}}, "elements": [], "widgetType": "heading"},
+          {"id": "w_wu_spc2", "elType": "widget", "settings": {"space": {"unit": "px", "size": 16}}, "elements": [], "widgetType": "spacer"},
+          {"id": "w_wu_sub", "elType": "widget", "settings": {"editor": "<p>Based in Jacksonville, FL — we've been crafting quality construction and remodeling projects for homeowners across the region. Solid construction, impeccable finishes, and a team that treats your home like their own.</p>", "text_color": "rgba(255,255,255,0.78)", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": {"unit": "px", "size": 16}}, "elements": [], "widgetType": "text-editor"},
+          {"id": "w_wu_spc3", "elType": "widget", "settings": {"space": {"unit": "px", "size": 32}}, "elements": [], "widgetType": "spacer"},
+          {"id": "w_wu_p1", "elType": "widget", "settings": {"title_text": "01 — Licensed & Insured", "description_text": "Full licensing and insurance coverage gives you complete peace of mind throughout every project.", "selected_icon": {"value": "", "library": ""}, "position": "left", "title_color": "#FFFFFF", "description_color": "rgba(255,255,255,0.62)", "title_typography_typography": "custom", "title_typography_font_family": "Outfit", "title_typography_font_size": {"unit": "px", "size": 17}, "title_typography_font_weight": "700"}, "elements": [], "widgetType": "icon-box"},
+          {"id": "w_wu_p2", "elType": "widget", "settings": {"title_text": "02 — Transparent Pricing", "description_text": "No hidden fees, no surprises. You get a detailed quote before any work begins — and we stick to it.", "selected_icon": {"value": "", "library": ""}, "position": "left", "title_color": "#FFFFFF", "description_color": "rgba(255,255,255,0.62)", "title_typography_typography": "custom", "title_typography_font_family": "Outfit", "title_typography_font_size": {"unit": "px", "size": 17}, "title_typography_font_weight": "700"}, "elements": [], "widgetType": "icon-box"},
+          {"id": "w_wu_p3", "elType": "widget", "settings": {"title_text": "03 — On-Time Delivery", "description_text": "We respect your time. Timelines are commitments, not suggestions. We finish when we say we will.", "selected_icon": {"value": "", "library": ""}, "position": "left", "title_color": "#FFFFFF", "description_color": "rgba(255,255,255,0.62)", "title_typography_typography": "custom", "title_typography_font_family": "Outfit", "title_typography_font_size": {"unit": "px", "size": 17}, "title_typography_font_weight": "700"}, "elements": [], "widgetType": "icon-box"},
+          {"id": "w_wu_p4", "elType": "widget", "settings": {"title_text": "04 — Bilingual Team", "description_text": "We serve Jacksonville's English and Spanish-speaking communities. Communication is always clear.", "selected_icon": {"value": "", "library": ""}, "position": "left", "title_color": "#FFFFFF", "description_color": "rgba(255,255,255,0.62)", "title_typography_typography": "custom", "title_typography_font_family": "Outfit", "title_typography_font_size": {"unit": "px", "size": 17}, "title_typography_font_weight": "700"}, "elements": [], "widgetType": "icon-box"}
+        ]}
+      ]
+    },
+    {
+      "id": "sec_testimonials",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#F3EBD5",
+        "padding": {"unit": "px", "top": "100", "right": "20", "bottom": "100", "left": "20", "isLinked": false}
+      },
+      "elements": [
+        {"id": "col_tt", "elType": "column", "settings": {"_column_size": 100, "_inline_size": null}, "elements": [
+          {"id": "w_tt_lbl", "elType": "widget", "settings": {"title": "REVIEWS", "header_size": "div", "align": "left", "title_color": "#F47A1F", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": {"unit": "px", "size": 12}, "typography_font_weight": "600", "typography_letter_spacing": {"unit": "px", "size": 1.8}}, "elements": [], "widgetType": "heading"},
+          {"id": "w_tt_spc1", "elType": "widget", "settings": {"space": {"unit": "px", "size": 16}}, "elements": [], "widgetType": "spacer"},
+          {"id": "w_tt_t", "elType": "widget", "settings": {"title": "What Our Clients <span style=\"color:#F47A1F\">Say.</span>", "header_size": "h2", "align": "left", "title_color": "#0A0A0C", "typography_typography": "custom", "typography_font_family": "Outfit", "typography_font_size": {"unit": "px", "size": 52}, "typography_font_size_mobile": {"unit": "px", "size": 32}, "typography_font_weight": "900", "typography_letter_spacing": {"unit": "px", "size": -1.5}}, "elements": [], "widgetType": "heading"},
+          {"id": "w_tt_spc2", "elType": "widget", "settings": {"space": {"unit": "px", "size": 48}}, "elements": [], "widgetType": "spacer"}
+        ]}
+      ]
+    },
+    {
+      "id": "sec_tt_cards",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#F3EBD5",
+        "structure": "30",
+        "padding": {"unit": "px", "top": "0", "right": "20", "bottom": "100", "left": "20", "isLinked": false}
+      },
+      "elements": [
+        {"id": "col_tt1", "elType": "column", "settings": {"_column_size": 33, "background_background": "classic", "background_color": "#FFFCF2", "border_border": "solid", "border_width": {"unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true}, "border_color": "rgba(10,10,12,0.10)", "border_radius": {"unit": "px", "top": "12", "right": "12", "bottom": "12", "left": "12", "isLinked": true}, "padding": {"unit": "px", "top": "32", "right": "32", "bottom": "32", "left": "32", "isLinked": false}}, "elements": [
+          {"id": "w_tt1_s", "elType": "widget", "settings": {"title": "★★★★★", "header_size": "div", "title_color": "#F47A1F", "typography_typography": "custom", "typography_font_size": {"unit": "px", "size": 16}, "typography_letter_spacing": {"unit": "px", "size": 2}}, "elements": [], "widgetType": "heading"},
+          {"id": "w_tt1_t", "elType": "widget", "settings": {"editor": "<p style=\"font-style:italic;\">C&amp;J completely transformed our kitchen. The craftsmanship is unreal — every detail was perfect. They finished on time and the price was exactly what they quoted. 100% recommend!</p>", "text_color": "rgba(10,10,12,0.75)", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": {"unit": "px", "size": 15}}, "elements": [], "widgetType": "text-editor"},
+          {"id": "w_tt1_n", "elType": "widget", "settings": {"title": "Maria G.", "header_size": "div", "title_color": "#0A0A0C", "typography_typography": "custom", "typography_font_family": "Outfit", "typography_font_size": {"unit": "px", "size": 15}, "typography_font_weight": "700"}, "elements": [], "widgetType": "heading"},
+          {"id": "w_tt1_l", "elType": "widget", "settings": {"title": "Jacksonville, FL", "header_size": "div", "title_color": "rgba(10,10,12,0.55)", "typography_typography": "custom", "typography_font_size": {"unit": "px", "size": 13}}, "elements": [], "widgetType": "heading"}
+        ]},
+        {"id": "col_tt2", "elType": "column", "settings": {"_column_size": 33, "background_background": "classic", "background_color": "#FFFCF2", "border_border": "solid", "border_width": {"unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true}, "border_color": "rgba(10,10,12,0.10)", "border_radius": {"unit": "px", "top": "12", "right": "12", "bottom": "12", "left": "12", "isLinked": true}, "padding": {"unit": "px", "top": "32", "right": "32", "bottom": "32", "left": "32", "isLinked": false}}, "elements": [
+          {"id": "w_tt2_s", "elType": "widget", "settings": {"title": "★★★★★", "header_size": "div", "title_color": "#F47A1F", "typography_typography": "custom", "typography_font_size": {"unit": "px", "size": 16}, "typography_letter_spacing": {"unit": "px", "size": 2}}, "elements": [], "widgetType": "heading"},
+          {"id": "w_tt2_t", "elType": "widget", "settings": {"editor": "<p style=\"font-style:italic;\">We got the LVP flooring done throughout the whole first floor. The team was professional, fast, and incredibly clean. The floors look absolutely stunning.</p>", "text_color": "rgba(10,10,12,0.75)", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": {"unit": "px", "size": 15}}, "elements": [], "widgetType": "text-editor"},
+          {"id": "w_tt2_n", "elType": "widget", "settings": {"title": "James R.", "header_size": "div", "title_color": "#0A0A0C", "typography_typography": "custom", "typography_font_family": "Outfit", "typography_font_size": {"unit": "px", "size": 15}, "typography_font_weight": "700"}, "elements": [], "widgetType": "heading"},
+          {"id": "w_tt2_l", "elType": "widget", "settings": {"title": "Jacksonville, FL", "header_size": "div", "title_color": "rgba(10,10,12,0.55)", "typography_typography": "custom", "typography_font_size": {"unit": "px", "size": 13}}, "elements": [], "widgetType": "heading"}
+        ]},
+        {"id": "col_tt3", "elType": "column", "settings": {"_column_size": 33, "background_background": "classic", "background_color": "#FFFCF2", "border_border": "solid", "border_width": {"unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true}, "border_color": "rgba(10,10,12,0.10)", "border_radius": {"unit": "px", "top": "12", "right": "12", "bottom": "12", "left": "12", "isLinked": true}, "padding": {"unit": "px", "top": "32", "right": "32", "bottom": "32", "left": "32", "isLinked": false}}, "elements": [
+          {"id": "w_tt3_s", "elType": "widget", "settings": {"title": "★★★★★", "header_size": "div", "title_color": "#F47A1F", "typography_typography": "custom", "typography_font_size": {"unit": "px", "size": 16}, "typography_letter_spacing": {"unit": "px", "size": 2}}, "elements": [], "widgetType": "heading"},
+          {"id": "w_tt3_t", "elType": "widget", "settings": {"editor": "<p style=\"font-style:italic;\">They built our pergola and installed new fence — the backyard is now our favorite place. Communication was excellent, and they cleaned up everything perfectly.</p>", "text_color": "rgba(10,10,12,0.75)", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": {"unit": "px", "size": 15}}, "elements": [], "widgetType": "text-editor"},
+          {"id": "w_tt3_n", "elType": "widget", "settings": {"title": "Sandra L.", "header_size": "div", "title_color": "#0A0A0C", "typography_typography": "custom", "typography_font_family": "Outfit", "typography_font_size": {"unit": "px", "size": 15}, "typography_font_weight": "700"}, "elements": [], "widgetType": "heading"},
+          {"id": "w_tt3_l", "elType": "widget", "settings": {"title": "Jacksonville, FL", "header_size": "div", "title_color": "rgba(10,10,12,0.55)", "typography_typography": "custom", "typography_font_size": {"unit": "px", "size": 13}}, "elements": [], "widgetType": "heading"}
+        ]}
+      ]
+    },
+    {
+      "id": "sec_cta",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#F47A1F",
+        "padding": {"unit": "px", "top": "80", "right": "20", "bottom": "80", "left": "20", "isLinked": false}
+      },
+      "elements": [
+        {"id": "col_cta", "elType": "column", "settings": {"_column_size": 100, "_inline_size": null}, "elements": [
+          {"id": "w_cta_t", "elType": "widget", "settings": {"title": "Your Dream Home<br>Starts with One Call.", "header_size": "h2", "align": "center", "title_color": "#000000", "typography_typography": "custom", "typography_font_family": "Outfit", "typography_font_size": {"unit": "px", "size": 56}, "typography_font_size_mobile": {"unit": "px", "size": 32}, "typography_font_weight": "900", "typography_letter_spacing": {"unit": "px", "size": -1.5}, "typography_line_height": {"unit": "em", "size": 1.1}}, "elements": [], "widgetType": "heading"},
+          {"id": "w_cta_spc1", "elType": "widget", "settings": {"space": {"unit": "px", "size": 16}}, "elements": [], "widgetType": "spacer"},
+          {"id": "w_cta_s", "elType": "widget", "settings": {"editor": "<p style=\"text-align:center;color:rgba(0,0,0,0.7);\">Free quote. No obligation. Licensed &amp; insured.</p>", "typography_typography": "custom", "typography_font_size": {"unit": "px", "size": 17}}, "elements": [], "widgetType": "text-editor"},
+          {"id": "w_cta_spc2", "elType": "widget", "settings": {"space": {"unit": "px", "size": 40}}, "elements": [], "widgetType": "spacer"},
+          {"id": "sec_cta_btns", "elType": "section", "isInner": true, "settings": {"structure": "20", "content_position": "middle"}, "elements": [
+            {"id": "col_cta_b1", "elType": "column", "settings": {"_column_size": 50}, "elements": [
+              {"id": "w_cta_b1", "elType": "widget", "settings": {"text": "Get Your Free Quote →", "link": {"url": "#contact"}, "align": "right", "align_mobile": "center", "background_color": "#000000", "button_text_color": "#FFFFFF", "hover_color": "#FFFFFF", "button_background_hover_color": "#111111", "typography_typography": "custom", "typography_font_family": "Outfit", "typography_font_size": {"unit": "px", "size": 16}, "typography_font_weight": "800", "border_radius": {"unit": "px", "top": "8", "right": "8", "bottom": "8", "left": "8", "isLinked": true}, "text_padding": {"unit": "px", "top": "16", "right": "36", "bottom": "16", "left": "36", "isLinked": false}}, "elements": [], "widgetType": "button"}
+            ]},
+            {"id": "col_cta_b2", "elType": "column", "settings": {"_column_size": 50}, "elements": [
+              {"id": "w_cta_b2", "elType": "widget", "settings": {"text": "📞 (918) 378-1896", "link": {"url": "tel:+19183781896"}, "align": "left", "align_mobile": "center", "background_color": "#FFFFFF", "button_text_color": "#000000", "hover_color": "#FFFFFF", "button_background_hover_color": "#111111", "typography_typography": "custom", "typography_font_family": "Outfit", "typography_font_size": {"unit": "px", "size": 16}, "typography_font_weight": "800", "border_radius": {"unit": "px", "top": "8", "right": "8", "bottom": "8", "left": "8", "isLinked": true}, "text_padding": {"unit": "px", "top": "16", "right": "36", "bottom": "16", "left": "36", "isLinked": false}}, "elements": [], "widgetType": "button"}
+            ]}
+          ]}
+        ]}
+      ]
+    },
+    {
+      "id": "sec_contact",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#FAF6EA",
+        "padding": {"unit": "px", "top": "100", "right": "20", "bottom": "100", "left": "20", "isLinked": false},
+        "structure": "20"
+      },
+      "elements": [
+        {"id": "col_ct1", "elType": "column", "settings": {"_column_size": 42, "_inline_size": null}, "elements": [
+          {"id": "w_ct_lbl", "elType": "widget", "settings": {"title": "GET IN TOUCH", "header_size": "div", "title_color": "#F47A1F", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": {"unit": "px", "size": 12}, "typography_font_weight": "600", "typography_letter_spacing": {"unit": "px", "size": 1.8}}, "elements": [], "widgetType": "heading"},
+          {"id": "w_ct_spc1", "elType": "widget", "settings": {"space": {"unit": "px", "size": 16}}, "elements": [], "widgetType": "spacer"},
+          {"id": "w_ct_t", "elType": "widget", "settings": {"title": "Ready to Start<br><span style=\"color:#F47A1F\">Your Project?</span>", "header_size": "h2", "title_color": "#0A0A0C", "typography_typography": "custom", "typography_font_family": "Outfit", "typography_font_size": {"unit": "px", "size": 48}, "typography_font_size_mobile": {"unit": "px", "size": 30}, "typography_font_weight": "900", "typography_letter_spacing": {"unit": "px", "size": -1.5}}, "elements": [], "widgetType": "heading"},
+          {"id": "w_ct_spc2", "elType": "widget", "settings": {"space": {"unit": "px", "size": 16}}, "elements": [], "widgetType": "spacer"},
+          {"id": "w_ct_sub", "elType": "widget", "settings": {"editor": "<p>Tell us about your project and we'll get back to you within 24 hours with a free, no-obligation quote.</p>", "text_color": "rgba(10,10,12,0.75)", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": {"unit": "px", "size": 16}}, "elements": [], "widgetType": "text-editor"},
+          {"id": "w_ct_spc3", "elType": "widget", "settings": {"space": {"unit": "px", "size": 32}}, "elements": [], "widgetType": "spacer"},
+          {"id": "w_ct_i1", "elType": "widget", "settings": {"selected_icon": {"value": "fas fa-phone", "library": "fa-solid"}, "title_text": "Phone / WhatsApp", "description_text": "+1 (918) 378-1896", "position": "left", "primary_color": "#F47A1F", "title_color": "rgba(10,10,12,0.55)", "description_color": "#0A0A0C", "title_typography_typography": "custom", "title_typography_font_size": {"unit": "px", "size": 12}, "title_typography_letter_spacing": {"unit": "px", "size": 1.5}, "title_typography_text_transform": "uppercase", "description_typography_typography": "custom", "description_typography_font_family": "Outfit", "description_typography_font_size": {"unit": "px", "size": 16}, "description_typography_font_weight": "700"}, "elements": [], "widgetType": "icon-box"},
+          {"id": "w_ct_i2", "elType": "widget", "settings": {"selected_icon": {"value": "fas fa-map-marker-alt", "library": "fa-solid"}, "title_text": "Location", "description_text": "Jacksonville, Florida", "position": "left", "primary_color": "#F47A1F", "title_color": "rgba(10,10,12,0.55)", "description_color": "#0A0A0C", "title_typography_typography": "custom", "title_typography_font_size": {"unit": "px", "size": 12}, "title_typography_letter_spacing": {"unit": "px", "size": 1.5}, "title_typography_text_transform": "uppercase", "description_typography_typography": "custom", "description_typography_font_family": "Outfit", "description_typography_font_size": {"unit": "px", "size": 16}, "description_typography_font_weight": "700"}, "elements": [], "widgetType": "icon-box"},
+          {"id": "w_ct_i3", "elType": "widget", "settings": {"selected_icon": {"value": "fab fa-instagram", "library": "fa-brands"}, "title_text": "Follow Our Work", "description_text": "@cjsolutionsfl_", "position": "left", "primary_color": "#F47A1F", "title_color": "rgba(10,10,12,0.55)", "description_color": "#0A0A0C", "title_typography_typography": "custom", "title_typography_font_size": {"unit": "px", "size": 12}, "title_typography_letter_spacing": {"unit": "px", "size": 1.5}, "title_typography_text_transform": "uppercase", "description_typography_typography": "custom", "description_typography_font_family": "Outfit", "description_typography_font_size": {"unit": "px", "size": 16}, "description_typography_font_weight": "700"}, "elements": [], "widgetType": "icon-box"},
+          {"id": "w_ct_i4", "elType": "widget", "settings": {"selected_icon": {"value": "fas fa-clock", "library": "fa-solid"}, "title_text": "Hours", "description_text": "Monday–Saturday, 7am–7pm", "position": "left", "primary_color": "#F47A1F", "title_color": "rgba(10,10,12,0.55)", "description_color": "#0A0A0C", "title_typography_typography": "custom", "title_typography_font_size": {"unit": "px", "size": 12}, "title_typography_letter_spacing": {"unit": "px", "size": 1.5}, "title_typography_text_transform": "uppercase", "description_typography_typography": "custom", "description_typography_font_family": "Outfit", "description_typography_font_size": {"unit": "px", "size": 16}, "description_typography_font_weight": "700"}, "elements": [], "widgetType": "icon-box"}
+        ]},
+        {"id": "col_ct2", "elType": "column", "settings": {"_column_size": 58, "_inline_size": null, "background_background": "classic", "background_color": "#FFFCF2", "border_border": "solid", "border_width": {"unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true}, "border_color": "rgba(10,10,12,0.10)", "border_radius": {"unit": "px", "top": "16", "right": "16", "bottom": "16", "left": "16", "isLinked": true}, "padding": {"unit": "px", "top": "40", "right": "40", "bottom": "40", "left": "40", "isLinked": false}}, "elements": [
+          {"id": "w_ct_form_note", "elType": "widget", "settings": {"editor": "<p style=\"color:rgba(10,10,12,0.55);font-style:italic;text-align:center;\">⚠️ Add your Elementor Pro <strong>Form</strong> widget here (or use Contact Form 7 / WPForms / Fluent Forms shortcode).<br><br>Form fields needed: First Name · Last Name · Email · Phone · Service Needed (dropdown) · Message · Submit button.</p>"}, "elements": [], "widgetType": "text-editor"}
+        ]}
+      ]
+    }
+  ],
+  "page_settings": {
+    "system_colors": [
+      {"_id": "primary", "title": "Primary", "color": "#F47A1F"},
+      {"_id": "secondary", "title": "Secondary", "color": "#2D2D33"},
+      {"_id": "text", "title": "Text", "color": "#0A0A0C"},
+      {"_id": "accent", "title": "Accent", "color": "#FAF6EA"}
+    ],
+    "system_typography": [
+      {"_id": "primary", "title": "Primary", "typography_typography": "custom", "typography_font_family": "Outfit", "typography_font_weight": "900"},
+      {"_id": "secondary", "title": "Secondary", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_weight": "500"},
+      {"_id": "text", "title": "Text", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_weight": "400"},
+      {"_id": "accent", "title": "Accent", "typography_typography": "custom", "typography_font_family": "Outfit", "typography_font_weight": "700"}
+    ]
+  }
+}

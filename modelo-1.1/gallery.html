@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery · C&amp;J SolutionsFL — Our Work</title>
+  <meta name="description" content="Browse our gallery of construction and remodeling projects in Jacksonville, FL." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="/assets/img/logo-icon.png" />
+  <link rel="stylesheet" href="css/styles.css?v=m1.1-mobilelogo" />
+  <style>
+    /* Gallery-specific page styles */
+    body { background: var(--bg); }
+    .gallery-head {
+      padding: calc(var(--nav-h) + 70px) 5vw 50px;
+      text-align: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .gallery-back-link {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.78rem; font-weight: 600;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 32px;
+      padding: 6px 14px;
+      border: 1px solid var(--line-o);
+      border-radius: 100px;
+      transition: background 0.25s, color 0.25s;
+    }
+    .gallery-back-link:hover {
+      background: var(--orange);
+      color: #0E0D0B;
+    }
+    .gallery-title {
+      font-family: 'Poppins', sans-serif;
+      font-size: clamp(2.4rem, 6vw, 4rem);
+      font-weight: 900;
+      letter-spacing: -0.035em;
+      line-height: 1.05;
+      color: var(--white);
+      margin-bottom: 16px;
+    }
+    .gallery-title .accent {
+      color: var(--orange);
+      font-style: italic;
+      font-weight: 700;
+    }
+    .gallery-sub {
+      font-size: 1.05rem;
+      color: var(--white-70);
+      max-width: 580px;
+      margin: 0 auto 12px;
+      line-height: 1.7;
+    }
+
+    /* Filter chips (categories) */
+    .gallery-filters {
+      display: flex; flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      padding: 0 5vw 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .gf-chip {
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.78rem; font-weight: 600;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--white-70);
+      padding: 9px 18px;
+      border: 1px solid var(--line);
+      border-radius: 100px;
+      background: var(--bg-card);
+      cursor: pointer;
+      transition: all 0.25s;
+    }
+    .gf-chip:hover {
+      border-color: var(--line-o);
+      color: var(--white);
+    }
+    .gf-chip.active {
+      background: var(--orange);
+      color: #0E0D0B;
+      border-color: var(--orange);
+    }
+
+    /* Masonry-ish grid */
+    .gallery-grid {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 5vw 120px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 18px;
+    }
+    .g-item {
+      position: relative;
+      border-radius: 14px;
+      overflow: hidden;
+      background: var(--bg-card);
+      border: 1px solid var(--line);
+      aspect-ratio: 4/3;
+      cursor: pointer;
+      transition: transform 0.4s var(--ease-out), box-shadow 0.4s, border-color 0.4s;
+    }
+    .g-item:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 44px rgba(45,45,51,0.10);
+      border-color: var(--line-o);
+    }
+    .g-item img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s var(--ease-out);
+    }
+    .g-item:hover img { transform: scale(1.06); }
+    .g-item .g-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(180deg, transparent 50%, rgba(0,0,0,0.62) 100%);
+      pointer-events: none;
+    }
+    .g-item .g-meta {
+      position: absolute; left: 18px; right: 18px; bottom: 16px;
+      color: #fff;
+      z-index: 2;
+    }
+    .g-cat {
+      display: inline-block;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.65rem; font-weight: 700;
+      letter-spacing: 0.16em; text-transform: uppercase;
+      background: var(--orange);
+      color: #0E0D0B;
+      padding: 4px 10px;
+      border-radius: 100px;
+      margin-bottom: 8px;
+    }
+    .g-title {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem; font-weight: 700;
+      letter-spacing: -0.01em;
+      color: #fff;
+    }
+
+    /* Big landscape items spanning 2 cols */
+    .g-item.wide {
+      grid-column: span 2;
+      aspect-ratio: 16/9;
+    }
+    .g-item.tall { aspect-ratio: 3/4; }
+
+    /* Empty slot for future photos */
+    .g-item.placeholder {
+      display: flex; align-items: center; justify-content: center;
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 100%, rgba(244,122,31,0.08) 0%, transparent 70%),
+        linear-gradient(140deg, var(--bg-card) 0%, var(--bg-2) 100%);
+      border: 1px dashed var(--line-o);
+    }
+    .g-item.placeholder::before {
+      content: '+';
+      font-family: 'Poppins', sans-serif;
+      font-size: 3rem;
+      font-weight: 300;
+      color: var(--orange);
+      opacity: 0.5;
+    }
+    .g-item.placeholder:hover { transform: none; box-shadow: none; }
+
+    /* Lightbox */
+    .lb {
+      position: fixed; inset: 0;
+      background: rgba(14,13,11,0.95);
+      backdrop-filter: blur(8px);
+      z-index: 9000;
+      display: none;
+      align-items: center; justify-content: center;
+      padding: 24px;
+    }
+    .lb.open { display: flex; }
+    .lb img { max-width: 92vw; max-height: 88vh; border-radius: 8px; }
+    .lb-close {
+      position: fixed; top: 24px; right: 24px;
+      width: 44px; height: 44px;
+      background: var(--orange);
+      color: #0E0D0B;
+      border-radius: 50%;
+      font-size: 1.6rem;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    @media (max-width: 700px) {
+      .g-item.wide { grid-column: span 1; aspect-ratio: 4/3; }
+      .gallery-grid { gap: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<a class="wa-float" href="https://wa.me/19183781896" target="_blank" rel="noopener" aria-label="WhatsApp C&J SolutionsFL">
+  💬
+</a>
+
+<!-- NAV -->
+<nav id="nav" role="navigation" aria-label="Main navigation">
+  <a class="nav-logo nav-logo-img-only" href="index.html" aria-label="C&J SolutionsFL Home">
+    <img src="/assets/img/logo-horiz.png" alt="C&J SolutionsFL — Construction and Remodeling" />
+  </a>
+  <ul class="nav-links" role="list">
+    <li><a href="index.html#services" data-i18n="nav.services">Services</a></li>
+    <li><a href="gallery.html" data-i18n="nav.work">Our Work</a></li>
+    <li><a href="index.html#whyus" data-i18n="nav.about">About</a></li>
+    <li><a href="index.html#testimonials" data-i18n="nav.reviews">Reviews</a></li>
+    <li><a href="index.html#contact" data-i18n="nav.contact">Contact</a></li>
+  </ul>
+  <div class="lang-switch" role="group" aria-label="Language switcher">
+    <button type="button" data-lang="en" class="active">EN</button>
+    <span class="sep">/</span>
+    <button type="button" data-lang="es">ES</button>
+  </div>
+  <a class="btn-nav" href="index.html#contact" data-i18n="nav.cta">Free Quote</a>
+  <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<nav class="nav-mobile" aria-label="Mobile navigation">
+  <a href="index.html#services" data-i18n="nav.services">Services</a>
+  <a href="gallery.html" data-i18n="nav.work">Our Work</a>
+  <a href="index.html#whyus" data-i18n="nav.aboutLong">About Us</a>
+  <a href="index.html#testimonials" data-i18n="nav.reviews">Reviews</a>
+  <a href="index.html#contact" data-i18n="nav.contact">Contact</a>
+  <a class="btn-mobile" href="index.html#contact" data-i18n="nav.ctaLong">Get a Free Quote →</a>
+</nav>
+
+<!-- HEADER -->
+<header class="gallery-head">
+  <a class="gallery-back-link" href="index.html" data-i18n="gallery.back">← Back to home</a>
+  <h1 class="gallery-title">Our <span class="accent" data-i18n-keep>Work.</span></h1>
+  <p class="gallery-sub" data-i18n="gallery.sub">A growing collection of construction and remodeling projects across Jacksonville and Central Florida.</p>
+</header>
+
+<!-- FILTERS (visual only for now) -->
+<div class="gallery-filters">
+  <button class="gf-chip active" data-filter="all">All</button>
+  <button class="gf-chip" data-filter="kitchen">Kitchen</button>
+  <button class="gf-chip" data-filter="bathroom">Bathroom</button>
+  <button class="gf-chip" data-filter="flooring">Flooring</button>
+  <button class="gf-chip" data-filter="exterior">Exterior</button>
+  <button class="gf-chip" data-filter="outdoor">Outdoor</button>
+</div>
+
+<!-- GRID -->
+<div class="gallery-grid">
+
+  <div class="g-item wide" data-cat="kitchen" data-src="/assets/img/projects/1.jpg">
+    <img src="/assets/img/projects/1.jpg" alt="Kitchen remodel — marble countertops and custom cabinetry" loading="lazy" />
+    <div class="g-overlay"></div>
+    <div class="g-meta">
+      <span class="g-cat">Kitchen</span>
+      <div class="g-title">Marble Countertop Remodel</div>
+    </div>
+  </div>
+
+  <div class="g-item" data-cat="bathroom" data-src="/assets/img/projects/2.jpg">
+    <img src="/assets/img/projects/2.jpg" alt="Bathroom remodel with lit mirror and marble shower" loading="lazy" />
+    <div class="g-overlay"></div>
+    <div class="g-meta">
+      <span class="g-cat">Bathroom</span>
+      <div class="g-title">Marble &amp; Wood Master Bath</div>
+    </div>
+  </div>
+
+  <div class="g-item" data-cat="carpentry" data-src="/assets/img/projects/3.jpg">
+    <img src="/assets/img/projects/3.jpg" alt="Custom staircase with modern handrails" loading="lazy" />
+    <div class="g-overlay"></div>
+    <div class="g-meta">
+      <span class="g-cat">Carpentry</span>
+      <div class="g-title">Modern Staircase Build</div>
+    </div>
+  </div>
+
+  <div class="g-item" data-cat="bathroom" data-src="/assets/img/projects/4.jpg">
+    <img src="/assets/img/projects/4.jpg" alt="Marble shower with built-in niche" loading="lazy" />
+    <div class="g-overlay"></div>
+    <div class="g-meta">
+      <span class="g-cat">Bathroom</span>
+      <div class="g-title">Marble Shower &amp; Niche</div>
+    </div>
+  </div>
+
+  <div class="g-item wide" data-cat="flooring" data-src="/assets/img/projects/5.jpg">
+    <img src="/assets/img/projects/5.jpg" alt="Open floor plan with lake view" loading="lazy" />
+    <div class="g-overlay"></div>
+    <div class="g-meta">
+      <span class="g-cat">Flooring</span>
+      <div class="g-title">Open Floor Plan · Lake View</div>
+    </div>
+  </div>
+
+  <div class="g-item" data-cat="bathroom" data-src="/assets/img/projects/6.jpg">
+    <img src="/assets/img/projects/6.jpg" alt="Bathroom vanity with maple cabinets and quartz countertop" loading="lazy" />
+    <div class="g-overlay"></div>
+    <div class="g-meta">
+      <span class="g-cat">Bathroom</span>
+      <div class="g-title">Wood Vanity Bathroom</div>
+    </div>
+  </div>
+
+  <div class="g-item" data-cat="outdoor" data-src="/assets/img/projects/7.jpg">
+    <img src="/assets/img/projects/7.jpg" alt="Outdoor pergola and patio" loading="lazy" />
+    <div class="g-overlay"></div>
+    <div class="g-meta">
+      <span class="g-cat">Outdoor</span>
+      <div class="g-title">Cedar Pergola &amp; Patio</div>
+    </div>
+  </div>
+
+  <div class="g-item" data-cat="kitchen" data-src="/assets/img/projects/8.jpg">
+    <img src="/assets/img/projects/8.jpg" alt="Modern kitchen with white cabinets and stone countertops" loading="lazy" />
+    <div class="g-overlay"></div>
+    <div class="g-meta">
+      <span class="g-cat">Kitchen</span>
+      <div class="g-title">Modern White Kitchen</div>
+    </div>
+  </div>
+
+  <div class="g-item" data-cat="kitchen" data-src="/assets/img/projects/9.jpg">
+    <img src="/assets/img/projects/9.jpg" alt="Kitchen with vaulted ceiling and quartz waterfall" loading="lazy" />
+    <div class="g-overlay"></div>
+    <div class="g-meta">
+      <span class="g-cat">Kitchen</span>
+      <div class="g-title">Quartz Waterfall Kitchen</div>
+    </div>
+  </div>
+
+  <div class="g-item" data-cat="exterior" data-src="/assets/img/projects/10.jpg">
+    <img src="/assets/img/projects/10.jpg" alt="Exterior blue craftsman home with stone accent" loading="lazy" />
+    <div class="g-overlay"></div>
+    <div class="g-meta">
+      <span class="g-cat">Exterior</span>
+      <div class="g-title">Coastal Blue Craftsman</div>
+    </div>
+  </div>
+
+  <div class="g-item wide" data-cat="bathroom" data-src="/assets/img/projects/11.jpg">
+    <img src="/assets/img/projects/11.jpg" alt="Dark marble shower with vanity and modern fixtures" loading="lazy" />
+    <div class="g-overlay"></div>
+    <div class="g-meta">
+      <span class="g-cat">Bathroom</span>
+      <div class="g-title">Dark Marble Spa Bath</div>
+    </div>
+  </div>
+
+  <div class="g-item" data-cat="bathroom" data-src="/assets/img/projects/12.jpg">
+    <img src="/assets/img/projects/12.jpg" alt="Walk-in marble shower with niche" loading="lazy" />
+    <div class="g-overlay"></div>
+    <div class="g-meta">
+      <span class="g-cat">Bathroom</span>
+      <div class="g-title">Walk-in Marble Shower</div>
+    </div>
+  </div>
+
+  <div class="g-item" data-cat="exterior" data-src="/assets/img/projects/exterior-house.jpg">
+    <img src="/assets/img/projects/exterior-house.jpg" alt="Exterior craftsman home with porch" loading="lazy" />
+    <div class="g-overlay"></div>
+    <div class="g-meta">
+      <span class="g-cat">Exterior</span>
+      <div class="g-title">White Craftsman Porch</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Lightbox -->
+<div class="lb" id="lightbox" role="dialog" aria-modal="true" aria-label="Project photo">
+  <span class="lb-close" id="lb-close" aria-label="Close">✕</span>
+  <img id="lb-img" src="" alt="" />
+</div>
+
+<!-- FOOTER -->
+<footer id="footer" role="contentinfo">
+  <div class="footer-top container">
+    <div class="footer-brand">
+      <div class="logo" aria-label="C&J SolutionsFL">
+        <img src="/assets/img/logo-icon.png" alt="C&J Solutions" style="width:34px;height:34px;object-fit:contain;" />
+        C&amp;J <span>Solutions</span>FL
+      </div>
+      <p data-i18n="footer.brand">Construction &amp; Remodeling specialists in Jacksonville, FL. Luxury in every detail. Quality with a Florida seal.</p>
+    </div>
+    <div class="footer-links">
+      <h4 data-i18n="footer.col3">Contact</h4>
+      <ul>
+        <li><a href="tel:+19183781896">+1 (918) 378-1896</a></li>
+        <li><a href="https://wa.me/19183781896">WhatsApp</a></li>
+        <li><a href="https://www.instagram.com/cjsolutionsfl_/" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    <p data-i18n="footer.copyright">© 2026 C&amp;J SolutionsFL. All rights reserved. Jacksonville, Florida.</p>
+  </div>
+</footer>
+
+<script defer src="js/i18n.js?v=m1.1-gallery"></script>
+<script defer src="js/main.js?v=m1.1-gallery"></script>
+<script defer>
+  // Filter
+  document.addEventListener("DOMContentLoaded", function () {
+    var chips = document.querySelectorAll(".gf-chip");
+    var items = document.querySelectorAll(".g-item:not(.placeholder)");
+    chips.forEach(function (chip) {
+      chip.addEventListener("click", function () {
+        chips.forEach(function (c) { c.classList.remove("active"); });
+        chip.classList.add("active");
+        var f = chip.getAttribute("data-filter");
+        items.forEach(function (it) {
+          it.style.display = (f === "all" || it.getAttribute("data-cat") === f) ? "" : "none";
+        });
+      });
+    });
+
+    // Lightbox
+    var lb = document.getElementById("lightbox");
+    var lbImg = document.getElementById("lb-img");
+    var lbClose = document.getElementById("lb-close");
+    document.querySelectorAll(".g-item[data-src]").forEach(function (el) {
+      el.addEventListener("click", function () {
+        lbImg.src = el.getAttribute("data-src");
+        lb.classList.add("open");
+      });
+    });
+    function close() { lb.classList.remove("open"); lbImg.src = ""; }
+    lbClose.addEventListener("click", close);
+    lb.addEventListener("click", function (e) { if (e.target === lb) close(); });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape") close(); });
+  });
+</script>
+
+</body>
+</html>

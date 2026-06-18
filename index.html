@@ -70,9 +70,10 @@
 
     .pick-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 24px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
     }
+    @media (max-width: 980px) { .pick-grid { grid-template-columns: 1fr; } }
     .pick-card {
       display: block;
       background: #FFFCF2;
@@ -241,7 +242,18 @@
         </div>
         <div class="pick-name">Modelo 1</div>
         <h2 class="pick-heading">Warm <em>Editorial</em></h2>
-        <p class="pick-desc">Paleta crema cálida, acentos serif italic, tarjetas suaves con detalles angulares naranjas. Calidez residencial.</p>
+        <p class="pick-desc">Paleta crema cálida, acentos serif italic, tarjetas suaves con detalles angulares naranjas.</p>
+        <span class="pick-arrow">Ver modelo →</span>
+      </a>
+
+      <a class="pick-card" href="/modelo-1.1/">
+        <div class="pick-preview preview-1">
+          <div class="mock-title">We Build Your<br><em>Dream Home.</em></div>
+          <div class="mock-stats"><span>5+</span><span>300+</span><span>100%</span><span>5★</span></div>
+        </div>
+        <div class="pick-name">Modelo 1.1</div>
+        <h2 class="pick-heading">Warm <em>Editorial</em></h2>
+        <p class="pick-desc">Copia del Modelo 1 — lista para iterar variantes (colores, layouts, copy) sin tocar el original.</p>
         <span class="pick-arrow">Ver modelo →</span>
       </a>
 
