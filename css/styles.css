@@ -1333,7 +1333,7 @@ section { padding: 100px 5vw; }
 }
 
 /* ============================================================
-   HERO — Brand blueprint art background (blurred)
+   HERO — Blueprint (fondo2) + orange→yellow gradient overlay
    ============================================================ */
 #hero {
   background: #2D2D33;
@@ -1344,8 +1344,8 @@ section { padding: 100px 5vw; }
 #hero::before {
   content: '';
   position: absolute; inset: -40px;
-  background: url('/assets/img/hero-fondo.png') center center / cover no-repeat;
-  filter: blur(10px) saturate(1.05);
+  background: url('/assets/img/hero-fondo2.png') center center / cover no-repeat;
+  filter: blur(6px) saturate(1.15);
   transform: scale(1.08);
   z-index: -2;
 }
@@ -1353,8 +1353,9 @@ section { padding: 100px 5vw; }
   content: '';
   position: absolute; inset: 0;
   background:
-    radial-gradient(ellipse 65% 55% at 25% 50%, rgba(14,13,11,0.40) 0%, transparent 65%),
-    linear-gradient(180deg, rgba(14,13,11,0.30) 0%, rgba(14,13,11,0.70) 100%);
+    radial-gradient(ellipse 70% 60% at 25% 50%, rgba(14,13,11,0.55) 0%, transparent 70%),
+    linear-gradient(135deg, rgba(244,122,31,0.55) 0%, rgba(245,180,30,0.40) 55%, rgba(244,122,31,0.30) 100%),
+    linear-gradient(180deg, transparent 0%, rgba(14,13,11,0.35) 100%);
   z-index: -1;
 }
 
